@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OPass 設定檔產生器</title>
+  <!-- TODO: developer version -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1>OPass 設定檔產生器</h1>
+    <form>
+      <div>
+        <label>event_id</label>
+        <input type="text" v-model="event_id" />
+      </div>
+      <div>
+        <label>display_name</label>
+        <input-i18n @result="display_name = $event"></input-i18n>
+      </div>
+      <div>
+        <label>publish</label>
+        <input type="datetime-local" placeholder="start_time" v-model="publish.start" />
+        <input type="datetime-local" placeholder="end_time" v-model="publish.end" />
+      </div>
+      <div>
+        <label>base_url</label>
+        <input type="text" v-model="base_url" />
+      </div>
+      <div>
+        <label>schedule_url</label>
+        <input type="text" v-model="schedule_url" />
+      </div>
+      <div>
+        <label>features</label>
+        <div>
+          <div v-for="(feature,key) in features">
+            <label>{{ key }}</label>
+            <input placeholder="https://" type="text" v-model="features[key]" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <label>custom_features<button type="button" @click="add">+</button></label>
+        <custom-feature v-model="custom_features"></custom-features>
+      </div>
+      <button type="button" @click="save">送出設定 PR</button>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
