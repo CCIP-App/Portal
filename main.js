@@ -77,7 +77,7 @@ var app = new Vue({
       start: '',
       end: ''
     },
-    base_url: '',
+    server_base_url: '',
     schedule_url: '',
     features: {
       irc: '',
