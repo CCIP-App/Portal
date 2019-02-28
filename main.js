@@ -73,6 +73,7 @@ var app = new Vue({
       zh: '',
       en: ''
     },
+    logo_url: '',
     publish: {
       start: '',
       end: ''

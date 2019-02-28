@@ -23,6 +23,10 @@
         <input-i18n @result="display_name = $event"></input-i18n>
       </div>
       <div>
+        <label>logo_url</label>
+        <input placeholder="https://" type="text" v-model="logo_url" />
+      </div>
+      <div>
         <label>publish</label>
         <input type="datetime-local" placeholder="start_time" v-model="publish.start" />
         <input type="datetime-local" placeholder="end_time" v-model="publish.end" />
