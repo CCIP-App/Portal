@@ -1,0 +1,22 @@
+{
+    "event_id": "SITCON_2019",
+    "display_name": {
+        "en": "SITCON 2019",
+        "tw": "SITCON 2019"
+    },
+    "publish": {
+        "start": "2019-02-23T12:00",
+        "end": "2019-05-31T12:00"
+    },
+    "server_base_url": "https://ccip.opass.app",
+    "schedule_url": "https://sitcon.org/2019/static/json/agenda.json",
+    "features": {
+        "irc": "https://ysitd.licson.net/channel/sitcon/today",
+        "telegram": "https://t.me/SITCONgeneral",
+        "staffs": "https://sitcon.org/2019/staff/",
+        "venue": "https://sitcon.org/2019/venue/",
+        "sponsors": "https://sitcon.org/2019/sponsor/",
+        "partners": ""
+    },
+    "custom_features": []
+}
