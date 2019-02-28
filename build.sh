@@ -2,7 +2,7 @@
 
 mkdir -p dist/events/
 
-for i in *.json; do
+for i in events/*.json; do
 	jq -c '{event_id, display_name, logo_url}' $i
 
 	mkdir dist/events/`basename $i .json`

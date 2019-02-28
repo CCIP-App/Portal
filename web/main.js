@@ -101,7 +101,7 @@ var app = new Vue({
     save: function () {
       let result = JSON.stringify(this.$data, undefined, 4)
       result = result.replace(/\n/g, '%0a')
-      window.location.href = 'https://github.com/CCIP-App/Portal/new/master?filename=' + this.event_id + '.json&value=' + result
+      window.location.href = 'https://github.com/CCIP-App/Portal/new/master?filename=events/' + this.event_id + '.json&value=' + result
     }
   }
 })
