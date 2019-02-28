@@ -5,7 +5,7 @@ Vue.component('input-i18n', {
         lang: 'en',
         content: ''
       }, {
-        lang: 'tw',
+        lang: 'zh',
         content: ''
       }]
     }
