@@ -1,0 +1,19 @@
+sudo: false
+language: node_js
+node_js:
+- '10'
+branches:
+  only:
+  - master
+install:
+  - sudo apt-get update
+  - sudo apt-get install -y jq
+script:
+  - ./build.sh
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: ./
+  on:
+    branch: master
