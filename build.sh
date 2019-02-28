@@ -3,11 +3,10 @@
 mkdir -p dist/events/
 
 for i in *.json; do
-	jq -c --arg FILENAME "`basename $i`" '{path: ("https://portal.opass.app/events/" + $FILENAME), display_name, logo_url}' $i
-	cp $i dist/events/
+	jq -c '{event_id, display_name, logo_url}' $i
 
-	mkdir dist/`basename $i .json`
+	mkdir dist/events/`basename $i .json`
 	cp $i $_/index.json
-done | jq -r -c -s . > dist/index.json
+done | jq -r -c -s . > dist/events/index.json
 
 cp web/* dist/
