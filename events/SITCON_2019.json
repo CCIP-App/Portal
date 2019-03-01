@@ -14,6 +14,7 @@
     "features": {
         "irc": "https://ysitd.licson.net/channel/sitcon/today",
         "telegram": "https://t.me/SITCONgeneral",
+        "puzzle": "https://puzzle.sitcon.party/?token=",
         "staffs": "https://sitcon.org/2019/staff/",
         "venue": "https://sitcon.org/2019/venue/",
         "sponsors": "https://sitcon.org/2019/sponsor/",
