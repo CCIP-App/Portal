@@ -83,6 +83,7 @@ var app = new Vue({
     features: {
       irc: '',
       telegram: '',
+      puzzle: '',
       staffs: '',
       venue: '',
       sponsors: '',
