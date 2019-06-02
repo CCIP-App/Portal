@@ -16,6 +16,9 @@ Vue.component('input-i18n', {
         lang: '',
         content: ''
       })
+    },
+    remove: function (index) {
+      this.forms.splice(index, 1);
     }
   },
   watch: {
@@ -36,6 +39,7 @@ Vue.component('input-i18n', {
         <div v-for="(item, index) in forms" class="i18n-input">
           <input type="text" placeholder="Any ISO 639-1 lang" v-model="item.lang" />
           <input type="text" placeholder="translate" v-model="item.content" />
+          <button type="button" class="icon" v-if="forms.length > 1" @click="remove(index)">×</button>
         </div>
         <button type="button" class="raised" @click="add">新增語言</button>
       </div>
@@ -45,6 +49,11 @@ Vue.component('input-i18n', {
 Vue.component('custom-feature', {
   props: {
     value: Array
+  },
+  methods: {
+    remove: function (index) {
+      this.value.splice(index, 1);
+    }
   },
   watch: {
     value: {
@@ -57,6 +66,7 @@ Vue.component('custom-feature', {
   template: `
       <div class="feature-list">
         <div v-for="(item, index) in value" class="feature">
+          <button type="button" class="icon" @click="remove(index)">×</button>
           <div class="item">
             <label>圖示網址</label>
             <input type="text" placeholder="http://" v-model="item.icon" />
