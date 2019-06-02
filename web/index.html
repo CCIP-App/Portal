@@ -46,6 +46,7 @@
       margin-bottom: 12px;
       display: flex;
       align-items: flex-start;
+      flex-wrap: wrap;
     }
     .item:last-child {
       margin-bottom: 0;
@@ -69,8 +70,8 @@
       border: 3px solid rgb(113, 113, 156);
       padding: 16px;
     }
-    .feature:not(:last-child) {
-      margin-bottom: 8px;
+    .feature {
+      margin-top: 8px;
     }
     .feature button:first-child {
       align-self: flex-end;
@@ -125,6 +126,12 @@
       align-items: center;
       flex-wrap: wrap;
     }
+
+    @media screen and (max-width: 700px) {
+      .item > label {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -147,8 +154,10 @@
         </div>
         <div class="item">
           <label>活動期間 <code>publish</code></label>
-          <input type="datetime-local" placeholder="start_time" v-model="publish.start" />
-          <input type="datetime-local" placeholder="end_time" v-model="publish.end" />
+          <div>
+            <input type="datetime-local" placeholder="start_time" v-model="publish.start" />
+            <input type="datetime-local" placeholder="end_time" v-model="publish.end" />
+          </div>
         </div>
         <div class="item">
           <label>快速通關 API base URL <code>server_base_url</code></label>
