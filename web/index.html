@@ -8,52 +8,159 @@
   <title>OPass 設定檔產生器</title>
   <!-- TODO: developer version -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #f1f2f4;
+      color: #333;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+    h1 {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+    .wrapper {
+      background: #fff;
+      padding: 17px 34px;
+      margin: 48px auto;
+      max-width: 700px;
+    }
+    code {
+      background: #f3ecf9;
+      border-radius: 2px;
+      padding: 2px;
+    }
+    section {
+      border: 3px solid rgb(113, 113, 156);
+      padding: 16px;
+    }
+    section:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    .item {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .item:last-child {
+      margin-bottom: 0;
+    }
+    .item > label {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-items: flex-start;
+      width: 170px;
+    }
+    #builtin-feature .item > label, .feature .item > label {
+      width: 80px;
+    }
+    .feature-list {
+      margin-bottom: 8px;
+    }
+    .feature {
+      display: flex;
+      flex-direction: column;
+      border: 3px solid rgb(113, 113, 156);
+      padding: 16px;
+    }
+    .feature:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    .feature button:first-child {
+      align-self: flex-end;
+      margin-right: -8px;
+      margin-top: -8px;
+    }
+    button::-moz-focus-inner {
+      border: 0;
+    }
+    button:hover, button:focus {
+      cursor: pointer;
+      outline: 0;
+    }
+    button.raised {
+      background: #8e24aa;
+      color: #fff;
+      min-width: 64px;
+      box-sizing: border-box;
+      padding: 0 16px;
+      margin: 4px 0;
+      height: 36px;
+      line-height: 1;
+      border-radius: 4px;
+      border: 0;
+      transition: box-shadow .25s ease;
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0,0,0,.12); /* stolen from Material Design Components */
+    }
+    button.raised:hover, button.raised:focus {
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0,0,0,.12);      
+    }
+    button.raised:active {
+      box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0,0,0,.12);
+    }
+    .i18n-input {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  </style>
 </head>
 
 <body>
   <div id="app">
-    <h1>OPass 設定檔產生器</h1>
-    <form>
-      <div>
-        <label>event_id</label>
-        <input type="text" v-model="event_id" />
-      </div>
-      <div>
-        <label>display_name</label>
-        <input-i18n @result="display_name = $event"></input-i18n>
-      </div>
-      <div>
-        <label>logo_url</label>
-        <input placeholder="https://" type="text" v-model="logo_url" />
-      </div>
-      <div>
-        <label>publish</label>
-        <input type="datetime-local" placeholder="start_time" v-model="publish.start" />
-        <input type="datetime-local" placeholder="end_time" v-model="publish.end" />
-      </div>
-      <div>
-        <label>server_base_url</label>
-        <input type="text" v-model="server_base_url" />
-      </div>
-      <div>
-        <label>schedule_url</label>
-        <input type="text" v-model="schedule_url" />
-      </div>
-      <div>
-        <label>features</label>
-        <div>
-          <div v-for="(feature,key) in features">
-            <label>{{ key }}</label>
-            <input placeholder="https://" type="text" v-model="features[key]" />
+    <div class="wrapper">
+      <h1>OPass 設定檔產生器</h1>
+      <section>
+        <div class="item">
+          <label>活動 ID <code>event_id</code></label>
+          <input placeholder="my_awesome_event" type="text" v-model="event_id" />
+        </div>
+        <div class="item">
+          <label>活動顯示名稱 <code>display_name</code></label>
+          <input-i18n @result="display_name = $event"></input-i18n>
+        </div>
+        <div class="item">
+          <label>Logo 網址 <code>logo_url</code></label>
+          <input placeholder="https://" type="text" v-model="logo_url" />
+        </div>
+        <div class="item">
+          <label>活動期間 <code>publish</code></label>
+          <input type="datetime-local" placeholder="start_time" v-model="publish.start" />
+          <input type="datetime-local" placeholder="end_time" v-model="publish.end" />
+        </div>
+        <div class="item">
+          <label>快速通關 API base URL <code>server_base_url</code></label>
+          <input placeholder="https://" type="text" v-model="server_base_url" />
+        </div>
+        <div class="item">
+          <label>議程資訊網址 <code>schedule_url</code></label>
+          <input placeholder="https://" type="text" v-model="schedule_url" />
+        </div>
+      </section>
+      <section>
+        <div class="item">
+          <label>功能 <code>features</code>留空即可停用</label>
+          <div id="builtin-feature">
+            <div v-for="(feature, key) in features" class="item">
+              <label><code>{{ key }}</code></label>
+              <input placeholder="https://" type="text" v-model="features[key]" />
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <label>custom_features<button type="button" @click="add">+</button></label>
-        <custom-feature v-model="custom_features"></custom-features>
-      </div>
-      <button type="button" @click="save">送出設定 PR</button>
-    </form>
+        <div class="item">
+          <label>其他自訂功能 <code>custom_features</code></label>
+          <custom-feature v-model="custom_features"></custom-feature>
+        </div>
+        <button type="button" class="raised" @click="add">新增功能</button>
+      </section>
+      <button type="button" class="raised" @click="save">送出設定 PR</button>
+    </div>
   </div>
   <script src="main.js"></script>
 </body>
