@@ -12,23 +12,20 @@
   },
   "server_base_url": "https://<domain>",
   "schedule_url": "https://<domain>/<file_path>.json",
-  "features": { // option
-    "irc": "https://",
-    "telegram": "https://",
-    "staffs": "https://",
-    "venue": "https://",
-    "sponsors": "https://",
-    "partners": "https://"
-  },
-  "custom_features": [
+  "features": [ // app follow the sequence
     {
-      "icon": "https://", // only accept @3x.png max: 128x128
-      "display_name": {
-        "zh": "",
+      "feature": "", // fastpass, schedule, announcement, puzzle, ticket, telegram, im, sponsors, staffs, venue, webview
+      "icon": "https://" // require when feature is webview, only accept @3x.png max: 128x128
+      "display_text": {
         "en": "",
+        "zh": "",
         "<Any ISO 639-1 lang>": ""
       },
-      "url": "https://"
+      "url": "https://", // support placeholder {role}, {token}
+      "visible_roles": [ // option, default for all user, string need match server config
+        "staff",
+        "speaker"
+      ]
     },
     ...
   ]
