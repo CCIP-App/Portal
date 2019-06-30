@@ -1,0 +1,110 @@
+{
+  "event_id": "COSCUP_2019",
+  "display_name": {
+    "en": "COSCUP 2019",
+    "zh": "COSCUP 2019"
+  },
+  "logo_url": "https://coscup.org/2019/logo-512-white.png",
+  "publish": {
+    "start": "2019-06-24T08:00",
+    "end": "2019-11-24T08:00"
+  },
+  "server_base_url": "https://ccip.opass.app",
+  "schedule_url": "https://api2019.coscup.org/programs.json",
+  "features": [
+    {
+      "feature": "fastpass",
+      "display_text": {
+        "en": "Fast Pass",
+        "zh": "快速通關"
+      }
+    },
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "議程"
+      }
+    },
+    {
+      "feature": "announcement",
+      "display_text": {
+        "en": "Announcement",
+        "zh": "大會公告"
+      }
+    },
+    {
+      "feature": "puzzle",
+      "display_text": {
+        "en": "Booth Reward Activity",
+        "zh": "開源巔峰挑戰賽"
+      },
+      "url": "https://play.coscup.org/?mode=app&token="
+    },
+    {
+      "feature": "ticket",
+      "display_text": {
+        "en": "Ticket",
+        "zh": "我的票券"
+      }
+    },
+    {
+      "feature": "telegram",
+      "display_text": {
+        "en": "Telegram",
+        "zh": "Telegram"
+      },
+      "url": "https://t.me/coscupchat"
+    },
+    {
+      "feature": "im",
+      "display_text": {
+        "en": "IRC Log",
+        "zh": "IRC Log"
+      },
+      "url": "https://ysitd.licson.net/channel/coscup/today"
+    },
+    {
+      "feature": "webview",
+      "icon": "https://coscup.org/2019/baseline_book_black.png",
+      "display_text": {
+        "en": "Guidebook",
+        "zh": "大會手冊"
+      },
+      "url": "https://docs.google.com/viewer?url=https://coscup.org/2019/guidebook2019.pdf"
+    },
+    {
+      "feature": "venue",
+      "display_text": {
+        "en": "Venue",
+        "zh": "會場地圖"
+      },
+      "url": "https://coscup.org/2019/floorplan/?mode=app"
+    },
+    {
+      "feature": "webview",
+      "icon": "https://coscup.org/2019/baseline_offline_bolt.png",
+      "display_text": {
+        "en": "Sign up lightning talk",
+        "zh": "閃電秀報名處"
+      },
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScwD7KE42i9Ck55S_FlEwKRpE5MWIf86rnpg-cqXoIes0GcXg/viewform"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Sponsors",
+        "zh": "贊助"
+      },
+      "url": "https://coscup.org/2019/sponsors/?mode=app"
+    },
+    {
+      "feature": "staffs",
+      "display_text": {
+        "en": "Staffs",
+        "zh": "工作人員"
+      },
+      "url": "https://coscup.org/2019/staffs/?mode=app"
+    }
+  ]
+}
