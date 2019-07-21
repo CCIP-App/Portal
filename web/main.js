@@ -157,6 +157,9 @@ Vue.component('feature-select', {
     featureName ({ feature, display_text }) {
       return `${feature} (${display_text.zh == "" ? "自訂功能" : display_text.zh})`
     },
+    getDefaults() {
+      return this.defaultOptions.filter(o => !this.$parent.value.map(f=>f.feature).includes(o.feature))
+    },
     listOptions(query) {
       this.isLoading = true
       new Promise((resolve, reject) => {
@@ -170,15 +173,15 @@ Vue.component('feature-select', {
           },
           "url": ""
         } : null
-        this.options = [feature].concat(this.defaultOptions).filter(f => f)
+        this.options = [feature].concat(this.getDefaults()).filter(f => f)
         this.isLoading = false
       })
     },
     open (id) {
-      this.options = this.defaultOptions
+      this.options = this.getDefaults()
     },
     close (value, id) {
-      this.options = this.defaultOptions
+      this.options = this.getDefaults()
     },
   },
   watch: {
