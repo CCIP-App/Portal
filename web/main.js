@@ -88,6 +88,13 @@ Vue.component('feature-select', {
       options: [],
       defaultOptions: [
         {
+          "feature": "fastpass",
+          "display_text": {
+            "en": "Fast Pass",
+            "zh": "快速通關"
+          }
+        },
+        {
           "feature": "schedule",
           "display_text": {
             "en": "Schedule",
