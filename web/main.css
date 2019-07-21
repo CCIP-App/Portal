@@ -47,8 +47,14 @@ section:not(:last-child) {
   align-items: flex-start;
   width: 170px;
 }
+.item > input[placeholder^="http"] {
+  width: calc(100% - 200px);
+}
 .feature-list .item > label {
   width: 120px;
+}
+.feature-list .item > input[placeholder^="http"] {
+  width: calc(100% - 160px);
 }
 .feature-list {
   margin-bottom: 8px;
