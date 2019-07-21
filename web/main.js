@@ -244,6 +244,7 @@ Vue.component('opass-feature', {
     setFeature: function (item, $event) {
       item.feature = $event.feature
       item.display_text = $event.display_text
+      item.url = $event.url
     },
     remove: function (index) {
       this.value.splice(index, 1);
@@ -271,7 +272,7 @@ Vue.component('opass-feature', {
           <label>顯示名稱 <code>display_text</code></label>
           <input-i18n v-model="item.display_text"></input-i18n>
         </div>
-        <div class="item">
+        <div v-if="item.url != undefined" class="item">
           <label>內容網址 <code>url</code></label>
           <input type="text" placeholder="http://" v-model="item.url" />
         </div>
