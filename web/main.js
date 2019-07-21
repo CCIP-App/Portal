@@ -76,6 +76,11 @@ Vue.component('input-i18n', {
 
 Vue.component('vue-multiselect', window.VueMultiselect.default)
 Vue.component('feature-select', {
+  props: {
+    itemValue: {
+      type: Object
+    }
+  },
   data: function() {
     return {
       value: "",
@@ -187,7 +192,13 @@ Vue.component('feature-select', {
   watch: {
     value: {
       handler: function (value) {
-        this.$emit('value', this.value)
+        this.$emit('value', value)
+      },
+      deep: true
+    },
+    itemValue: {
+      handler: function (value) {
+        this.value = value
       },
       deep: true
     }
@@ -195,6 +206,7 @@ Vue.component('feature-select', {
   template: `
     <vue-multiselect
       v-model="value"
+      :value="itemValue"
       :options="options"
       :custom-label="featureName"
       :internal-search="false"
@@ -245,7 +257,7 @@ Vue.component('opass-feature', {
         <div class="item">
           <label>功能名稱 <code>feature</code></label>
           <div>
-            <feature-select @value="setFeature(item, $event)" placeholder="功能"></feature-select>
+            <feature-select :item-value="item" @value="setFeature(item, $event)" placeholder="功能"></feature-select>
           </div>
         </div>
         <div class="item">
