@@ -63,14 +63,14 @@ Vue.component('input-i18n', {
     }
   },
   template: `
-      <div>
-        <div v-for="(item, index) in forms" class="i18n-input">
-          <input type="text" placeholder="Any ISO 639-1 lang" v-model="item.lang" />
-          <input type="text" placeholder="translate" v-model="item.content" />
-          <button type="button" class="icon" v-if="forms.length > 1" @click="remove(index)">×</button>
-        </div>
-        <button type="button" class="raised" @click="add">新增語言</button>
+    <div>
+      <div v-for="(item, index) in forms" class="i18n-input">
+        <input type="text" placeholder="Any ISO 639-1 lang" v-model="item.lang" />
+        <input type="text" placeholder="translate" v-model="item.content" />
+        <button type="button" class="icon" v-if="forms.length > 1" @click="remove(index)">×</button>
       </div>
+      <button type="button" class="raised" @click="add">新增語言</button>
+    </div>
   `
 })
 
@@ -92,24 +92,24 @@ Vue.component('custom-feature', {
     }
   },
   template: `
-      <div class="feature-list">
-        <div v-for="(item, index) in value" class="feature">
-          <button type="button" class="icon" @click="remove(index)">×</button>
-          <div class="item">
-            <label>圖示網址</label>
-            <input type="text" placeholder="http://" v-model="item.icon" />
-          </div>
-          <div class="item">
-            <label>顯示名稱</label>
-            <input-i18n v-model="item.display_name"></input-i18n>
-          </div>
-          <div class="item">
-            <label>內容網址</label>
-            <input type="text" placeholder="http://" v-model="item.url" />
-          </div>
+    <div class="feature-list">
+      <div v-for="(item, index) in value" class="feature">
+        <button type="button" class="icon" @click="remove(index)">×</button>
+        <div class="item">
+          <label>圖示網址</label>
+          <input type="text" placeholder="http://" v-model="item.icon" />
+        </div>
+        <div class="item">
+          <label>顯示名稱</label>
+          <input-i18n v-model="item.display_name"></input-i18n>
+        </div>
+        <div class="item">
+          <label>內容網址</label>
+          <input type="text" placeholder="http://" v-model="item.url" />
         </div>
       </div>
-      `
+    </div>
+  `
 })
 
 var app = new Vue({
