@@ -1,13 +1,19 @@
 Vue.component('input-i18n', {
-  data: function () {
-    return {
-      forms: [{
-        lang: 'en',
-        content: ''
-      }, {
-        lang: 'zh',
-        content: ''
-      }]
+  props: {
+    value: {
+      type: Object
+    },
+    forms: {
+      type: Array,
+      default: function() {
+        return [{
+          lang: 'en',
+          content: ''
+        }, {
+          lang: 'zh',
+          content: ''
+        }]
+      }
     }
   },
   methods: {
@@ -22,6 +28,28 @@ Vue.component('input-i18n', {
     }
   },
   watch: {
+    value: {
+      handler: function(value) {
+        let langs = Object.keys(value)
+        let form_keys = this.forms.map(f=>f.lang)
+        if (langs.length > this.forms.length) {
+          for (var i = 0; i <= langs.length - this.forms.length; i++)
+            this.add()
+        }
+        Object.entries(value).map(kv => {
+          let i = this.forms.map((f, i) => f.lang == kv[0] ? i : -1).filter(f => f != -1)[0]
+          if (i == -1) {
+            this.forms.push({
+              lang: kv[0],
+              content: kv[1]
+            })
+          } else {
+            this.forms[i].lang = kv[0]
+            this.forms[i].content = kv[1]
+          }
+        })
+      }
+    },
     forms: {
       handler: function (value) {
         let result = {}
@@ -29,7 +57,7 @@ Vue.component('input-i18n', {
           if (form.lang !== '')
             result[form.lang] = form.content
         }
-        this.$emit('result', result)
+        this.$emit('input', result)
       },
       deep: true
     }
@@ -43,7 +71,7 @@ Vue.component('input-i18n', {
         </div>
         <button type="button" class="raised" @click="add">新增語言</button>
       </div>
-      `
+  `
 })
 
 Vue.component('custom-feature', {
@@ -73,7 +101,7 @@ Vue.component('custom-feature', {
           </div>
           <div class="item">
             <label>顯示名稱</label>
-            <input-i18n @result="item.display_name = $event"></input-i18n>
+            <input-i18n v-model="item.display_name"></input-i18n>
           </div>
           <div class="item">
             <label>內容網址</label>
