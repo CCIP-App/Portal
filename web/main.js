@@ -177,7 +177,7 @@ Vue.component('feature-select', {
       new Promise((resolve, reject) => {
         setTimeout(resolve, 250)
       }).then(() => {
-        var feature = query.length > 0 ? {
+        var feature = query.length > 0 && !this.getDefaults().map(f => f.feature).includes(query) ? {
           "feature": query,
           "display_text": {
             "en": "",
@@ -222,8 +222,7 @@ Vue.component('feature-select', {
       :max-height="200"
       :show-no-results="false"
       :allow-empty="false"
-      open-direction="bottom"
-      placeholder="基本功能，或輸入自訂功能"
+      placeholder="輸入基本或自訂功能"
       label="feature"
       track-by="feature"
       select-label=""
