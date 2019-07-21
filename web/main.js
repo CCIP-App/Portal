@@ -74,11 +74,155 @@ Vue.component('input-i18n', {
   `
 })
 
-Vue.component('custom-feature', {
+Vue.component('vue-multiselect', window.VueMultiselect.default)
+Vue.component('feature-select', {
+  data: function() {
+    return {
+      value: "",
+      isLoading: false,
+      options: [],
+      defaultOptions: [
+        {
+          "feature": "schedule",
+          "display_text": {
+            "en": "Schedule",
+            "zh": "議程"
+          }
+        },
+        {
+          "feature": "announcement",
+          "display_text": {
+            "en": "Announcement",
+            "zh": "大會公告"
+          }
+        },
+        {
+          "feature": "puzzle",
+          "display_text": {
+            "en": "Booth Reward Activity",
+            "zh": "開源巔峰挑戰賽"
+          }
+        },
+        {
+          "feature": "ticket",
+          "display_text": {
+            "en": "Ticket",
+            "zh": "我的票券"
+          }
+        },
+        {
+          "feature": "telegram",
+          "display_text": {
+            "en": "Telegram",
+            "zh": "Telegram"
+          },
+          "url": "https://t.me/<@group>"
+        },
+        {
+          "feature": "im",
+          "display_text": {
+            "en": "IRC Log",
+            "zh": "IRC Log"
+          },
+          "url": "https://ysitd.licson.net/channel/<@group>/today"
+        },
+        {
+          "feature": "venue",
+          "display_text": {
+            "en": "Venue",
+            "zh": "會場地圖"
+          },
+          "url": "https://<url>/?mode=app"
+        },
+        {
+          "feature": "sponsors",
+          "display_text": {
+            "en": "Sponsors",
+            "zh": "贊助"
+          },
+          "url": "https://<url>/?mode=app"
+        },
+        {
+          "feature": "staffs",
+          "display_text": {
+            "en": "Staffs",
+            "zh": "工作人員"
+          },
+          "url": "https://<url>/?mode=app"
+        }
+      ]
+    }
+  },
+  methods: {
+    featureName ({ feature, display_text }) {
+      return `${feature} (${display_text.zh == "" ? "自訂功能" : display_text.zh})`
+    },
+    listOptions(query) {
+      this.isLoading = true
+      new Promise((resolve, reject) => {
+        setTimeout(resolve, 250)
+      }).then(() => {
+        var feature = query.length > 0 ? {
+          "feature": query,
+          "display_text": {
+            "en": "",
+            "zh": ""
+          },
+          "url": ""
+        } : null
+        this.options = [feature].concat(this.defaultOptions).filter(f => f)
+        this.isLoading = false
+      })
+    },
+    open (id) {
+      this.options = this.defaultOptions
+    },
+    close (value, id) {
+      this.options = this.defaultOptions
+    },
+  },
+  watch: {
+    value: {
+      handler: function (value) {
+        this.$emit('value', this.value)
+      },
+      deep: true
+    }
+  },
+  template: `
+    <vue-multiselect
+      v-model="value"
+      :options="options"
+      :custom-label="featureName"
+      :internal-search="false"
+      :searchable="true"
+      :loading="isLoading"
+      :max-height="200"
+      :show-no-results="false"
+      :allow-empty="false"
+      open-direction="bottom"
+      placeholder="基本功能，或輸入自訂功能"
+      label="feature"
+      track-by="feature"
+      select-label=""
+      deselect-label=""
+      selected-label=""
+      @search-change="listOptions"
+      @open="open"
+      @close="close"
+    ></vue-multiselect>
+  `
+})
+
+Vue.component('opass-feature', {
   props: {
     value: Array
   },
   methods: {
+    setFeature: function (item, $event) {
+      item.feature = $event.feature
+      item.display_text = $event.display_text
+    },
     remove: function (index) {
       this.value.splice(index, 1);
     }
@@ -86,7 +230,7 @@ Vue.component('custom-feature', {
   watch: {
     value: {
       handler: function (value) {
-        this.$emit('input', this.value)
+        this.$emit('value', this.value)
       },
       deep: true
     }
@@ -96,15 +240,17 @@ Vue.component('custom-feature', {
       <div v-for="(item, index) in value" class="feature">
         <button type="button" class="icon" @click="remove(index)">×</button>
         <div class="item">
-          <label>圖示網址</label>
-          <input type="text" placeholder="http://" v-model="item.icon" />
+          <label>功能名稱 <code>feature</code></label>
+          <div>
+            <feature-select @value="setFeature(item, $event)" placeholder="功能"></feature-select>
+          </div>
         </div>
         <div class="item">
-          <label>顯示名稱</label>
-          <input-i18n v-model="item.display_name"></input-i18n>
+          <label>顯示名稱 <code>display_text</code></label>
+          <input-i18n v-model="item.display_text"></input-i18n>
         </div>
         <div class="item">
-          <label>內容網址</label>
+          <label>內容網址 <code>url</code></label>
           <input type="text" placeholder="http://" v-model="item.url" />
         </div>
       </div>
@@ -127,22 +273,16 @@ var app = new Vue({
     },
     server_base_url: '',
     schedule_url: '',
-    features: {
-      irc: '',
-      telegram: '',
-      puzzle: '',
-      staffs: '',
-      venue: '',
-      sponsors: '',
-      partners: ''
-    },
-    custom_features: [],
+    features: [],
   },
   methods: {
     add: function () {
-      this.custom_features.push({
-        icon: '',
-        display_name: {},
+      this.features.push({
+        feature: '',
+        display_text: {
+          zh: '',
+          en: ''
+        },
         url: ''
       })
     },

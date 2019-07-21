@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="main.css">
   <!-- TODO: developer version -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
+  <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
 </head>
 
 <body>
@@ -46,17 +48,8 @@
       </section>
       <section>
         <div class="item">
-          <label>功能 <code>features</code>留空即可停用</label>
-          <div id="builtin-feature">
-            <div v-for="(feature, key) in features" class="item">
-              <label><code>{{ key }}</code></label>
-              <input placeholder="https://" type="text" v-model="features[key]" />
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <label>其他自訂功能 <code>custom_features</code></label>
-          <custom-feature v-model="custom_features"></custom-feature>
+          <label>功能 <code>features</code></label>
+          <opass-feature v-model="features"></opass-feature>
         </div>
         <button type="button" class="raised" @click="add">新增功能</button>
       </section>
