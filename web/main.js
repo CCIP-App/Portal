@@ -112,7 +112,7 @@ Vue.component('feature-select', {
           "feature": "puzzle",
           "display_text": {
             "en": "Booth Reward Activity",
-            "zh": "開源巔峰挑戰賽"
+            "zh": "大地遊戲"
           }
         },
         {
@@ -222,7 +222,7 @@ Vue.component('feature-select', {
       :max-height="200"
       :show-no-results="false"
       :allow-empty="false"
-      placeholder="輸入基本或自訂功能"
+      placeholder="選擇功能"
       label="feature"
       track-by="feature"
       select-label=""
