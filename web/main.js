@@ -161,6 +161,14 @@ Vue.component('feature-select', {
             "zh": "工作人員"
           },
           "url": "https://<url>/?mode=app"
+        },
+        {
+          "feature": "webview",
+          "display_text": {
+            "en": "Custom Web View",
+            "zh": "自訂網頁"
+          },
+          "url": "https://<url>/?token={token}&role={role}"
         }
       ]
     }
