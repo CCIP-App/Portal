@@ -191,7 +191,9 @@ Vue.component('feature-select', {
             "en": "",
             "zh": ""
           },
-          "url": ""
+          "url": "",
+          "icon": "",
+          "visible_roles": []
         } : null
         this.options = [feature].concat(this.getDefaults()).filter(f => f)
         this.isLoading = false
@@ -243,6 +245,71 @@ Vue.component('feature-select', {
   `
 })
 
+Vue.component('feature-roles', {
+  props: {
+    value: {
+      type: Array
+    },
+    forms: {
+      type: Array,
+      default: function() {
+        return [{
+          role: ''
+        }]
+      }
+    }
+  },
+  methods: {
+    add: function () {
+      this.forms.push({
+        role: ''
+      })
+    },
+    remove: function (index) {
+      this.forms.splice(index, 1);
+    }
+  },
+  watch: {
+    value: {
+      handler: function(value) {
+        let roles = Object.keys(value)
+        let form_keys = this.forms.map(f=>f.role)
+        if (roles.length > this.forms.length) {
+          for (var i = 0; i <= roles.length - this.forms.length; i++)
+            this.add({role: ""})
+        }
+        Object.entries(value).map(kv => {
+          let i = this.forms.map((f, i) => f.role == kv[1] ? i : -1).filter(f => f != -1)[0]
+          console.log(i, kv, this.forms)
+          if (i == -1) {
+            this.forms.push({
+              role: kv[1]
+            })
+          } else {
+            this.forms[i].role = kv[1]
+          }
+        })
+      }
+    },
+    forms: {
+      handler: function (value) {
+        let result = this.forms.map(f=>f.role).filter(f=>f)
+        this.$emit('input', result)
+      },
+      deep: true
+    }
+  },
+  template: `
+    <div>
+      <div v-for="(item, index) in forms" class="i18n-input">
+        <input type="text" placeholder="Role" v-model="item.role" />
+        <button type="button" class="icon" v-if="forms.length > 1" @click="remove(index)">×</button>
+      </div>
+      <button type="button" class="raised" @click="add">新增角色</button>
+    </div>
+  `
+})
+
 Vue.component('opass-feature', {
   props: {
     value: Array
@@ -260,7 +327,21 @@ Vue.component('opass-feature', {
   watch: {
     value: {
       handler: function (value) {
-        this.$emit('value', this.value)
+        value = this.value.map(v => {
+          console.log(JSON.stringify(v, null, 4))
+          if (v.icon !== undefined && v.icon.length == 0) {
+            delete v.icon
+          }
+          if (v.url !== undefined && v.url.length == 0) {
+            delete v.url
+          }
+          if (v.visible_roles !== undefined && v.visible_roles.length == 0) {
+            delete v.visible_roles
+          }
+          console.log(JSON.stringify(v, null ,4))
+          return v
+        })
+        this.$emit('value', value)
       },
       deep: true
     }
@@ -276,12 +357,22 @@ Vue.component('opass-feature', {
           </div>
         </div>
         <div class="item">
+          <label>顯示圖示 <code>icon</code></label>
+          <input type="text" placeholder="http://" v-model="item.icon" />
+        </div>
+        <div class="item">
           <label>顯示名稱 <code>display_text</code></label>
           <input-i18n v-model="item.display_text"></input-i18n>
         </div>
         <div v-if="item.url != undefined" class="item">
           <label>內容網址 <code>url</code></label>
           <input type="text" placeholder="http://" v-model="item.url" />
+        </div>
+        <div class="item">
+          <label>使用角色 <code>visible_roles</code></label>
+          <div>
+            <feature-roles v-model="item.visible_roles"></feature-roles>
+          </div>
         </div>
       </div>
     </div>
@@ -313,7 +404,9 @@ var app = new Vue({
           zh: '',
           en: ''
         },
-        url: ''
+        url: '',
+        icon: '',
+        visible_roles: []
       })
     },
     save: function () {
