@@ -1,0 +1,80 @@
+{
+  "event_id": "HITCON_2019",
+  "display_name": {
+    "en": "HITCON CMT 2019",
+    "zh": "HITCON CMT 2019"
+  },
+  "logo_url": "https://cfp2019.hitcon.org/static/images/HITCON15_KV.png",
+  "publish": {
+    "start": "2019-06-24T08:00",
+    "end": "2019-11-24T08:00"
+  },
+  "server_base_url": "https://hitcon.opass.app",
+  "schedule_url": "https://lynx.hitcon.tw/agenda.json",
+  "features": [
+    {
+      "feature": "fastpass",
+      "display_text": {
+        "en": "Fast Pass",
+        "zh": "快速通關"
+      },
+      "visible_roles": [
+        "staff"
+      ]
+    },
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "議程"
+      }
+    },
+    {
+      "feature": "ticket",
+      "display_text": {
+        "en": "Ticket",
+        "zh": "我的票券"
+      }
+    },
+    {
+      "feature": "announcement",
+      "display_text": {
+        "en": "Announcement",
+        "zh": "大會公告"
+      }
+    },
+    {
+      "feature": "puzzle",
+      "display_text": {
+        "en": "Booth Reward Activity",
+        "zh": "攤位賓果連線"
+      },
+        "url": "https://bingo.hitcon.tw/bingo?token="
+    },
+    {
+      "feature": "webview",
+      "icon": "https://hitcon.org/2019/CMT/images/favicon/favicon.png",
+      "display_text": {
+        "en": "狩獵者行動",
+        "zh": "狩獵者行動"
+      },
+      "url": "https://lynx.hitcon.tw/hunting/?token={public_token}&role={role}"
+    },
+    {
+      "feature": "im",
+      "display_text": {
+        "en": "IRC",
+        "zh": "IRC"
+      },
+      "url": "https://irc.hitcon.org"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Sponsors",
+        "zh": "贊助"
+      },
+      "url": "https://hitcon.org/2019/CMT/app/sponsors"
+    }
+  ]
+}
