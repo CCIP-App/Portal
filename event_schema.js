@@ -21,7 +21,7 @@
         "zh": "",
         "<Any ISO 639-1 lang>": ""
       },
-      "url": "https://", // support placeholder {role}, {token}
+      "url": "https://", // support placeholder {role}, {public_token}
       "visible_roles": [ // option, default for all user, string need match server config
         "staff",
         "speaker"
