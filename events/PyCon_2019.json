@@ -5,6 +5,10 @@
     "zh": "PyConTW 2019"
   },
   "logo_url": "https://github.com/pycontw/ccip-files/blob/master/mobile-logo.png?raw=true",
+  "event_date": {
+    "start": "2019-09-20T00:00:00+08:00",
+    "end": "2019-09-22T00:00:00+08:00"
+  },
   "publish": {
     "start": "2019-08-20T07:00",
     "end": "2019-12-22T18:00"
