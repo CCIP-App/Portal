@@ -1,0 +1,63 @@
+{
+    "event_id": "Crosslink_2019",
+    "display_name": {
+        "en": "Crosslink 2019",
+        "zh": "Crosslink 2019"
+    },
+    "logo_url": "https://crosslink.taipei/images/logo.png",
+    "publish": {
+        "start": "2019-10-01T00:00",
+        "end": "2019-11-01T00:00"
+    },
+    "server_base_url": "",
+    "schedule_url": "https://croink2019.firebaseio.com/opass-schedule.json",
+    "features": [
+        {
+            "feature": "schedule",
+            "display_text": {
+                "en": "Schedule",
+                "zh": "議程"
+            }
+        },
+        {
+            "feature": "telegram",
+            "display_text": {
+                "en": "Telegram",
+                "zh": "Telegram"
+            },
+            "url": "https://t.me/Crosslink2019"
+        },
+        {
+            "feature": "venue",
+            "display_text": {
+                "en": "Venue",
+                "zh": "交通資訊"
+            },
+            "url": "https://hackmd.io/@JagLin/r1Nsc47KB"
+        },
+        {
+            "feature": "sponsors",
+            "display_text": {
+                "en": "Partners",
+                "zh": "合作夥伴"
+            },
+            "url": "https://crosslink.taipei/partners/?mode=app"
+        },
+        {
+            "feature": "staffs",
+            "display_text": {
+                "en": "Staffs",
+                "zh": "工作人員"
+            },
+            "url": "https://crosslink.taipei/team/?mode=app"
+        },
+        {
+            "feature": "webview",
+            "display_text": {
+                "en": "Official Site",
+                "zh": "官方網站"
+            },
+            "url": "https://crosslink.taipei"
+        }
+    ]
+}
