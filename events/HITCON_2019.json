@@ -13,8 +13,6 @@
     "start": "2019-06-24T08:00",
     "end": "2019-11-24T08:00"
   },
-  "server_base_url": "https://hitcon.opass.app",
-  "schedule_url": "https://lynx.hitcon.tw/agenda.json",
   "features": [
     {
       "feature": "fastpass",
@@ -24,14 +22,16 @@
       },
       "visible_roles": [
         "staff"
-      ]
+      ],
+      "url": "https://hitcon.opass.app"
     },
     {
       "feature": "schedule",
       "display_text": {
         "en": "Schedule",
         "zh": "議程"
-      }
+      },
+      "url": "https://lynx.hitcon.tw/agenda.json"
     },
     {
       "feature": "ticket",
@@ -45,7 +45,8 @@
       "display_text": {
         "en": "Announcement",
         "zh": "大會公告"
-      }
+      },
+      "url": "https://hitcon.opass.app"
     },
     {
       "feature": "puzzle",

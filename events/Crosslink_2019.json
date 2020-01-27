@@ -13,15 +13,14 @@
     "start": "2019-10-01T00:00",
     "end": "2019-11-01T00:00"
   },
-  "server_base_url": "https://opass.app/",
-  "schedule_url": "https://jaglin.github.io/crosslink-schedule/opass-schedule.json",
   "features": [
     {
       "feature": "schedule",
       "display_text": {
         "en": "Schedule",
         "zh": "議程"
-      }
+      },
+      "url": "https://jaglin.github.io/crosslink-schedule/opass-schedule.json"
     },
     {
       "feature": "telegram",

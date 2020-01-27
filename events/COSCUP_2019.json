@@ -13,29 +13,30 @@
     "start": "2019-06-24T08:00",
     "end": "2019-11-24T08:00"
   },
-  "server_base_url": "https://ccip.opass.app",
-  "schedule_url": "https://api2019.coscup.org/programs.json",
   "features": [
     {
       "feature": "fastpass",
       "display_text": {
         "en": "Fast Pass",
         "zh": "快速通關"
-      }
+      },
+      "url": "https://ccip.opass.app"
     },
     {
       "feature": "schedule",
       "display_text": {
         "en": "Schedule",
         "zh": "議程"
-      }
+      },
+      "url": "https://api2019.coscup.org/programs.json"
     },
     {
       "feature": "announcement",
       "display_text": {
         "en": "Announcement",
         "zh": "大會公告"
-      }
+      },
+      "url": "https://ccip.opass.app"
     },
     {
       "feature": "puzzle",
