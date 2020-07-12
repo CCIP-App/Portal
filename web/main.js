@@ -92,21 +92,30 @@ Vue.component('feature-select', {
           "display_text": {
             "en": "Fast Pass",
             "zh": "快速通關"
-          }
+          },
+          "wifi": [
+            {
+              "SSID": "WiFi SSID",
+              "password": "WiFi password"
+            }
+          ],
+          "url": "https://<OPass Server URL>"
         },
         {
           "feature": "schedule",
           "display_text": {
             "en": "Schedule",
             "zh": "議程"
-          }
+          },
+          "url": "https://<Schedule JSON URL>"
         },
         {
           "feature": "announcement",
           "display_text": {
             "en": "Announcement",
             "zh": "大會公告"
-          }
+          },
+          "url": "https://<OPass Server URL>"
         },
         {
           "feature": "puzzle",
@@ -187,12 +196,13 @@ Vue.component('feature-select', {
       }).then(() => {
         var feature = query.length > 0 && !this.getDefaults().map(f => f.feature).includes(query) ? {
           "feature": query,
+          "icon": "",
           "display_text": {
             "en": "",
             "zh": ""
           },
           "url": "",
-          "icon": "",
+          "wifi": [],
           "visible_roles": []
         } : null
         this.options = [feature].concat(this.getDefaults()).filter(f => f)
@@ -242,6 +252,85 @@ Vue.component('feature-select', {
       @open="open"
       @close="close"
     ></vue-multiselect>
+  `
+})
+
+Vue.component('feature-wifi', {
+  props: {
+    value: {
+      type: Array
+    },
+    forms: {
+      type: Array,
+      default: function() {
+        return [
+          this.value.length > 0 ? this.value[0] : {
+            SSID: '',
+            password: ''
+          }
+        ]
+      }
+    }
+  },
+  methods: {
+    add: function () {
+      this.forms.push({
+        SSID: '',
+        password: ''
+      })
+    },
+    remove: function (index) {
+      this.forms.splice(index, 1);
+    }
+  },
+  watch: {
+    value: {
+      handler: function(value) {
+        let wifi = Object.values(value)
+        if (wifi.length > this.forms.length) {
+          for (var i = 0; i <= wifi.length - this.forms.length; i++)
+            this.add()
+        }
+        Object.entries(wifi).map(kv => {
+          let i = this.forms.map((f, i) => f.SSID == kv[0] ? i : -1).filter(f => f != -1)[0]
+          if (i == -1) {
+            this.forms.push({
+              SSID: kv[0],
+              password: kv[1]
+            })
+          } else {
+            this.forms[i] = {
+              SSID: kv[0],
+              password: kv[1]
+            }
+          }
+        })
+      }
+    },
+    forms: {
+      handler: function (value) {
+        let result = []
+        for (form of this.forms) {
+          if (form.SSID !== '')
+            result.push({
+              SSID: form.SSID,
+              password: form.password
+            })
+        }
+        this.$emit('input', result)
+      },
+      deep: true
+    }
+  },
+  template: `
+    <div>
+      <div v-for="(item, index) in forms" class="i18n-input">
+      <input type="text" placeholder="SSID" v-model="item.SSID" />
+      <input type="text" placeholder="password" v-model="item.password" />
+        <button type="button" class="icon" v-if="forms.length > 1" @click="remove(index)">×</button>
+      </div>
+      <button type="button" class="raised" @click="add">新增WiFi</button>
+    </div>
   `
 })
 
@@ -319,6 +408,7 @@ Vue.component('opass-feature', {
       item.feature = $event.feature
       item.display_text = $event.display_text
       item.url = $event.url
+      item.wifi = $event.wifi
     },
     remove: function (index) {
       this.value.splice(index, 1);
@@ -334,6 +424,9 @@ Vue.component('opass-feature', {
           }
           if (v.url !== undefined && v.url.length == 0) {
             delete v.url
+          }
+          if (v.wifi !== undefined && v.wifi.length == 0) {
+            delete v.wifi
           }
           if (v.visible_roles !== undefined && v.visible_roles.length == 0) {
             delete v.visible_roles
@@ -368,6 +461,12 @@ Vue.component('opass-feature', {
           <label>內容網址 <code>url</code></label>
           <input type="text" placeholder="http://" v-model="item.url" />
         </div>
+        <div v-if="item.wifi != undefined" class="item">
+          <label>無線網路 <code>wifi</code></label>
+          <div>
+            <feature-wifi v-model="item.wifi"></feature-wifi>
+          </div>
+        </div>
         <div class="item">
           <label>使用角色 <code>visible_roles</code></label>
           <div>
@@ -388,24 +487,27 @@ var app = new Vue({
       en: ''
     },
     logo_url: '',
+    event_date: {
+      start: '',
+      end: ''
+    },
     publish: {
       start: '',
       end: ''
     },
-    server_base_url: '',
-    schedule_url: '',
     features: [],
   },
   methods: {
     add: function () {
       this.features.push({
         feature: '',
+        icon: '',
         display_text: {
           zh: '',
           en: ''
         },
         url: '',
-        icon: '',
+        wifi: [],
         visible_roles: []
       })
     },

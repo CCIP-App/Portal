@@ -40,19 +40,18 @@
           <input placeholder="https://" type="text" v-model="logo_url" />
         </div>
         <div class="item">
-          <label>活動期間 <code>publish</code></label>
+          <label>活動期間 <code>event_date</code></label>
+          <div>
+            <input type="datetime-local" placeholder="start_time" v-model="event_date.start" />
+            <input type="datetime-local" placeholder="end_time" v-model="event_date.end" />
+          </div>
+        </div>
+        <div class="item">
+          <label>發佈期間 <code>publish</code></label>
           <div>
             <input type="datetime-local" placeholder="start_time" v-model="publish.start" />
             <input type="datetime-local" placeholder="end_time" v-model="publish.end" />
           </div>
-        </div>
-        <div class="item">
-          <label>快速通關 API base URL <code>server_base_url</code></label>
-          <input placeholder="https://" type="text" v-model="server_base_url" />
-        </div>
-        <div class="item">
-          <label>議程資訊網址 <code>schedule_url</code></label>
-          <input placeholder="https://" type="text" v-model="schedule_url" />
         </div>
       </section>
       <section>
