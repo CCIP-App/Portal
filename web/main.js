@@ -87,17 +87,24 @@ Vue.component('feature-select', {
       options: [],
       defaultOptions: [
         {
-          "feature": "fastpass",
+          "feature": "wifi",
           "display_text": {
-            "en": "Fast Pass",
-            "zh": "快速通關"
+            "en": "WiFi Settings",
+            "zh": "WiFi 設定"
           },
           "wifi": [
             {
               "SSID": "WiFi SSID",
               "password": "WiFi password"
             }
-          ],
+          ]
+        },
+        {
+          "feature": "fastpass",
+          "display_text": {
+            "en": "Fast Pass",
+            "zh": "快速通關"
+          },
           "url": "https://<OPass Server URL>"
         },
         {
