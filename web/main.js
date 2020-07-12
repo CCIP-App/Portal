@@ -31,7 +31,6 @@ Vue.component('input-i18n', {
     value: {
       handler: function(value) {
         let langs = Object.keys(value)
-        let form_keys = this.forms.map(f=>f.lang)
         if (langs.length > this.forms.length) {
           for (var i = 0; i <= langs.length - this.forms.length; i++)
             this.add()
@@ -362,7 +361,6 @@ Vue.component('feature-roles', {
     value: {
       handler: function(value) {
         let roles = Object.keys(value)
-        let form_keys = this.forms.map(f=>f.role)
         if (roles.length > this.forms.length) {
           for (var i = 0; i <= roles.length - this.forms.length; i++)
             this.add({role: ""})
@@ -418,7 +416,6 @@ Vue.component('opass-feature', {
     value: {
       handler: function (value) {
         value = this.value.map(v => {
-          console.log(JSON.stringify(v, null, 4))
           if (v.icon !== undefined && v.icon.length == 0) {
             delete v.icon
           }
@@ -431,7 +428,6 @@ Vue.component('opass-feature', {
           if (v.visible_roles !== undefined && v.visible_roles.length == 0) {
             delete v.visible_roles
           }
-          console.log(JSON.stringify(v, null ,4))
           return v
         })
         this.$emit('value', value)
