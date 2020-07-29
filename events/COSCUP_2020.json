@@ -63,7 +63,7 @@
         "en": "Booth Reward Activity",
         "zh": "開源巔峰挑戰賽"
       },
-      "url": "https://play.coscup.org/?mode=app&token={public_token}"
+      "url": "https://play.coscup.org/?mode=app&token={public_token}&"
     },
     {
       "feature": "webview",

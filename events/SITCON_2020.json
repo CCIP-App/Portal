@@ -44,7 +44,7 @@
         "en": "#define matrix",
         "zh": "#define matrix"
       },
-      "url": "https://play.sitcon.party/?mode=app&token={public_token}"
+      "url": "https://play.sitcon.party/?mode=app&token={public_token}&"
     },
     {
       "feature": "ticket",
