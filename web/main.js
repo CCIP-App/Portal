@@ -50,7 +50,7 @@ Vue.component('input-i18n', {
       }
     },
     forms: {
-      handler: function (_) {
+      handler: function () {
         let result = {}
         for (form of this.forms) {
           if (form.lang !== '')
@@ -197,7 +197,7 @@ Vue.component('feature-select', {
     },
     listOptions(query) {
       this.isLoading = true
-      new Promise((resolve, _) => {
+      new Promise((resolve) => {
         setTimeout(resolve, 250)
       }).then(() => {
         var feature = query.length > 0 && !this.getDefaults().map(f => f.feature).includes(query) ? {
@@ -215,10 +215,10 @@ Vue.component('feature-select', {
         this.isLoading = false
       })
     },
-    open (_) {
+    open () {
       this.options = this.getDefaults()
     },
-    close (_, _) {
+    close () {
       this.options = this.getDefaults()
     },
   },
@@ -314,7 +314,7 @@ Vue.component('feature-wifi', {
       }
     },
     forms: {
-      handler: function (_) {
+      handler: function () {
         let result = []
         for (form of this.forms) {
           if (form.SSID !== '')
@@ -386,7 +386,7 @@ Vue.component('feature-roles', {
       }
     },
     forms: {
-      handler: function (_) {
+      handler: function () {
         let result = this.forms.map(f=>f.role).filter(f=>f)
         this.$emit('input', result)
       },
@@ -481,7 +481,7 @@ Vue.component('opass-feature', {
   `
 })
 
-var _ = new Vue({
+new Vue({
   el: '#app',
   data: {
     event_id: '',
