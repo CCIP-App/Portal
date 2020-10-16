@@ -1,0 +1,58 @@
+name: Release
+
+on:
+  push:
+    branches: master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+        extended: true
+    - name: Setup Node
+      uses: actions/setup-node@v2.1.0
+      with:
+        node-version: '10.x'
+    - name: Install jq
+      run: sudo apt-get install -y jq
+    - uses: actions/cache@v2
+      with:
+        path: /tmp/hugo_cache
+        key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+        restore-keys: |
+          ${{ runner.os }}-hugomod-
+    - name: Cache dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Build
+      env:
+        GO111MODULE: on
+      run: ./build.sh
+    - name: Archive Production Artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: dist
+        path: dist
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        cname: portal.opass.app
+        publish_dir: dist
+#    - uses: akhileshns/heroku-deploy@v3.5.7
+#      with:
+#        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+#        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+#        heroku_email: ${{ secrets.HEROKU_EMAIL }}
+#        usedocker: true
