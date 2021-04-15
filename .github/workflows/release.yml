@@ -17,9 +17,9 @@ jobs:
         hugo-version: 'latest'
         extended: true
     - name: Setup Node
-      uses: actions/setup-node@v2.1.0
+      uses: actions/setup-node@v2
       with:
-        node-version: '10.x'
+        node-version: '14'
     - name: Install jq
       run: sudo apt-get install -y jq
     - uses: actions/cache@v2
