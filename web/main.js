@@ -490,6 +490,7 @@ new Vue({
       en: ''
     },
     logo_url: '',
+    event_website: '',
     event_date: {
       start: '',
       end: ''

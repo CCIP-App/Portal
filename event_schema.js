@@ -6,6 +6,7 @@
     "<Any ISO 639-1 lang>": ""
   },
   "logo_url": "https://", // only accept HTTPS URL
+  "event_website": "https://", // please use HTTPS URL
   "event_date": { // only accept ISO 8601
     "start": "2020-03-28T00:00:00+08:00",
     "end": "2020-03-28T00:00:00+08:00"
