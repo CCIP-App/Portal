@@ -69,8 +69,8 @@
     {
       "feature": "webview",
       "display_text": {
-        "en": "Daily Mission",
-        "zh": "每日任務"
+        "en": "Volunteer Quest",
+        "zh": "一日志工 志工任務"
       },
       "icon": "https://coscup.org/2023/images/icons/task_FILL1_wght400_GRAD0_opsz48.png",
       "url": "https://volunteer.coscup.org/tasks/2023"
