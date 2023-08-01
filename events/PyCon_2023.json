@@ -29,7 +29,7 @@
         "en": "Schedule",
         "zh": "議程"
       },
-      "url": "https://tw.pycon.org/2023/ccip/"
+      "url": "https://tw.pycon.org/prs/ccip/"
     },
     {
       "feature": "announcement",
@@ -48,20 +48,19 @@
       "url": "https://game.pycon.tw/?mode=app&token={public_token}"
     },
     {
+      "feature": "puzzle",
+      "display_text": {
+        "en": "Wide Game venue",
+        "zh": "大地遊戲地圖"
+      },
+      "url": "https://hackmd.io/@pycontw/HJgqT-gsn"
+    },
+    {
       "feature": "ticket",
       "display_text": {
         "en": "Ticket",
         "zh": "我的票券"
       }
-    },
-    {
-      "feature": "webview",
-      "display_text": {
-        "en": "Health Declaration",
-        "zh": "健康聲明書"
-      },
-      "icon": "https://raw.githubusercontent.com/pycontw/ccip-files/master/2020/icon_hot_to_reg_48.png",
-      "url": "https://cdc.pycon.tw/#/?rtoken={token}"
     },
     {
       "feature": "webview",
