@@ -24,22 +24,33 @@
       "url": "https://hitcon.org/2023/CMT/schedule.json"
     },
     {
-      "feature": "webview",
+      "feature": "venue",
       "display_text": {
-        "en": "Buy Ticket",
-        "zh": "前往購票"
+        "en": "Venue 3F",
+        "zh": "會場地圖 3F"
       },
-      "icon": "https://hitcon.org/2019/CMT/images/favicon/favicon.png",
-      "url": "https://hitcon.kktix.cc/events/hitcon-cmt-2023"
+      "url": "https://hitcon.org/2023/CMT/img/location/3f.png"
     },
     {
-      "feature": "webview",
+      "feature": "venue",
       "display_text": {
-        "en": "Pre-event Party",
-        "zh": "前夜派對"
+        "en": "Venue 4F",
+        "zh": "會場地圖 4F"
       },
-      "icon": "https://hitcon.org/2019/CMT/images/favicon/favicon.png",
-      "url": "https://hitcon.kktix.cc/events/hitcon-party-2023"
+      "url": "https://hitcon.org/2023/CMT/img/location/4f.png"
+    },
+    {
+      "feature": "wifi",
+      "display_text": {
+        "en": "WiFi",
+        "zh": "會場 WiFi"
+      },
+      "wifi": [
+        {
+          "SSID": "HITCON CMT 2023 via KlickKlack",
+          "password": "20230818"
+        }
+      ]
     },
     {
       "feature": "telegram",
