@@ -48,7 +48,7 @@
       "url": "https://game.pycon.tw/?mode=app&token={public_token}"
     },
     {
-      "feature": "puzzle",
+      "feature": "webview",
       "display_text": {
         "en": "Pythonista Manual",
         "zh": "拍神祕笈"
