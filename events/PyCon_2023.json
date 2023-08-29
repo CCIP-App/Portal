@@ -50,6 +50,14 @@
     {
       "feature": "webview",
       "display_text": {
+        "en": "Pythonista Word",
+        "zh": "拍神字母"
+      },
+      "url": "https://opass.pycon.tw/pintoo&token={public_token}"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
         "en": "Pythonista Manual",
         "zh": "拍神祕笈"
       },
