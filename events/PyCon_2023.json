@@ -53,7 +53,7 @@
         "en": "Pythonista Word",
         "zh": "拍神字母"
       },
-      "url": "https://opass.pycon.tw/pintoo&token={token}"
+      "url": "https://opass.pycon.tw/pintoo?token={token}"
     },
     {
       "feature": "webview",
