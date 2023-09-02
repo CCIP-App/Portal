@@ -97,6 +97,19 @@
       "url": "https://storage.googleapis.com/pycontw-static/ccip-files/venue.jpg"
     },
     {
+      "feature": "wifi",
+      "display_text": {
+        "en": "WiFi",
+        "zh": "會場 WiFi"
+      },
+      "wifi": [
+        {
+          "SSID": "PyConTW_attendee via KlickKlack",
+          "password": "h20230902"
+        }
+      ]
+    },
+    {
       "feature": "staffs",
       "display_text": {
         "en": "Staffs",
