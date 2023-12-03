@@ -1,0 +1,35 @@
+{
+  "event_id": "devfest_taipei_2023",
+  "display_name": {
+    "en": "DevFest Taipei 2023",
+    "zh": "DevFest Taipei 2023"
+  },
+  "logo_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/DF23-Bevy-EventThumb-Red@2x_NQMf5UF.png",
+  "event_website": "https://gdg.community.dev/events/details/google-gdg-taipei-presents-devfest-taipei-2023/",
+  "event_date": {
+    "start": "2023-12-16T08:00:00+08:00",
+    "end": "2023-12-16T17:00:00+08:00"
+  },
+  "publish": {
+    "start": "2023-12-02T08:00",
+    "end": "2023-12-17T08:00"
+  },
+  "features": [
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "議程"
+      },
+      "url": "https://babogoos.github.io/devfest-taipei-2023-schedule/opass-schedule.json"
+    },
+    {
+      "feature": "telegram",
+      "display_text": {
+        "en": "Telegram",
+        "zh": "Telegram"
+      },
+      "url": "https://t.me/gdgtaipei"
+    }
+  ]
+}
