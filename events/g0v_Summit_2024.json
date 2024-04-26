@@ -16,6 +16,19 @@
   },
   "features": [
     {
+      "feature": "fastpass",
+      "display_text": {
+        "en": "Fast Pass",
+        "zh": "快速通關"
+      },
+      "url": "https://opass.g0v.tw",
+      "visible_roles": [
+        "attendee",
+        "speaker",
+        "staff"
+      ]
+    },
+    {
       "feature": "schedule",
       "display_text": {
         "en": "Schedule",
@@ -24,12 +37,52 @@
       "url": "https://g0v.github.io/summit2024/assets/data/schedule.json"
     },
     {
+      "feature": "webview",
+      "display_text": {
+        "en": "Notes",
+        "zh": "共筆"
+      },
+      "url": "https://g0v.hackmd.io/@summit2024/notes/"
+    },
+    {
       "feature": "venue",
       "display_text": {
         "en": "Venue",
         "zh": "會場地圖"
       },
       "url": "https://summit.g0v.tw/2024/visit/"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Unconference",
+        "zh": "開放工作坊"
+      },
+      "url": "https://g0v.hackmd.io/@summit2024/notes/%2FIGm0HDk1QDKRAoqpf6d7qA"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Lightning Talk",
+        "zh": "閃電講"
+      },
+      "url": "https://g0v.hackmd.io/@summit2024/notes/%2FJCl7O8QXTeWlcYukM6ld3w"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Code of Conduct",
+        "zh": "社群守則"
+      },
+      "url": "https://summit.g0v.tw/2024/coc/"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Partners",
+        "zh": "合作夥伴"
+      },
+      "url": "https://summit.g0v.tw/2024/partners/"
     }
   ]
 }
