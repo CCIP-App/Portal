@@ -29,6 +29,21 @@
       ]
     },
     {
+      "feature": "ticket",
+      "display_text": {
+        "en": "Ticket",
+        "zh": "我的票券"
+      }
+    },
+    {
+      "feature": "announcement",
+      "display_text": {
+        "en": "Bulletin",
+        "zh": "大會公告"
+      },
+      "url": "https://opass.g0v.tw"
+    },
+    {
       "feature": "schedule",
       "display_text": {
         "en": "Schedule",
@@ -55,7 +70,7 @@
     {
       "feature": "webview",
       "display_text": {
-        "en": "Unconference",
+        "en": "Unconf.",
         "zh": "開放工作坊"
       },
       "url": "https://g0v.hackmd.io/@summit2024/notes/%2FIGm0HDk1QDKRAoqpf6d7qA"
@@ -69,12 +84,28 @@
       "url": "https://g0v.hackmd.io/@summit2024/notes/%2FJCl7O8QXTeWlcYukM6ld3w"
     },
     {
+      "feature": "staffs",
+      "display_text": {
+        "en": "Staff",
+        "zh": "工作人員"
+      },
+      "url": "https://summit.g0v.tw/2024/staff/"
+    },
+    {
       "feature": "webview",
       "display_text": {
         "en": "Code of Conduct",
         "zh": "社群守則"
       },
       "url": "https://summit.g0v.tw/2024/coc/"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Working Group Minutes",
+        "zh": "籌備紀錄"
+      },
+      "url": "https://g0v.hackmd.io/@summit2024/book/"
     },
     {
       "feature": "sponsors",
