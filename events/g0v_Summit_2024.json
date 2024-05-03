@@ -69,6 +69,14 @@
       ]
     },
     {
+      "feature": "venue",
+      "display_text": {
+        "en": "Venue",
+        "zh": "會場地圖"
+      },
+      "url": "https://summit.g0v.tw/2024/visit/"
+    },
+    {
       "feature": "announcement",
       "display_text": {
         "en": "Bulletin",
@@ -103,14 +111,6 @@
       "url": "https://g0v.hackmd.io/@summit2024/notes/"
     },
     {
-      "feature": "venue",
-      "display_text": {
-        "en": "Venue",
-        "zh": "會場地圖"
-      },
-      "url": "https://summit.g0v.tw/2024/visit/"
-    },
-    {
       "feature": "webview",
       "display_text": {
         "en": "Unconf.",
@@ -127,14 +127,6 @@
       },
       "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
       "url": "https://g0v.hackmd.io/@summit2024/notes/%2FJCl7O8QXTeWlcYukM6ld3w"
-    },
-    {
-      "feature": "staffs",
-      "display_text": {
-        "en": "Staff",
-        "zh": "工作人員"
-      },
-      "url": "https://summit.g0v.tw/2024/staff/"
     },
     {
       "feature": "webview",
@@ -155,6 +147,22 @@
       "url": "https://forms.gle/LYGUTG58yj8doKxT6"
     },
     {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Partners",
+        "zh": "合作夥伴"
+      },
+      "url": "https://summit.g0v.tw/2024/partners/"
+    },
+    {
+      "feature": "staffs",
+      "display_text": {
+        "en": "Staff",
+        "zh": "工作人員"
+      },
+      "url": "https://summit.g0v.tw/2024/staff/"
+    },
+    {
       "feature": "webview",
       "display_text": {
         "en": "Working Group Minutes",
@@ -162,14 +170,6 @@
       },
       "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
       "url": "https://g0v.hackmd.io/@summit2024/book/"
-    },
-    {
-      "feature": "sponsors",
-      "display_text": {
-        "en": "Partners",
-        "zh": "合作夥伴"
-      },
-      "url": "https://summit.g0v.tw/2024/partners/"
     }
   ]
 }
