@@ -77,6 +77,15 @@
       "url": "https://opass.g0v.tw"
     },
     {
+      "feature": "webview",
+      "display_text": {
+        "en": "Safety Tips",
+        "zh": "安全須知"
+      },
+      "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
+      "url": "https://summit.g0v.tw/2024/safety/"
+    },
+    {
       "feature": "schedule",
       "display_text": {
         "en": "Schedule",
@@ -134,6 +143,15 @@
       },
       "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
       "url": "https://summit.g0v.tw/2024/coc/"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "CoC Violation Report",
+        "zh": "騷擾事件通報"
+      },
+      "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
+      "url": "https://forms.gle/LYGUTG58yj8doKxT6"
     },
     {
       "feature": "webview",
