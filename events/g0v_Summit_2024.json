@@ -36,6 +36,39 @@
       }
     },
     {
+      "feature": "wifi",
+      "display_text": {
+        "en": "Wi-Fi",
+        "zh": "會場 Wi-Fi"
+      },
+      "wifi": [
+        {
+          "SSID": "g0v Summit 2024_via KlickKlack",
+          "password": "summit2024"
+        }
+      ],
+      "visible_roles": [
+        "attendee",
+        "speaker"
+      ]
+    },
+    {
+      "feature": "wifi",
+      "display_text": {
+        "en": "Wi-Fi",
+        "zh": "會場 Wi-Fi"
+      },
+      "wifi": [
+        {
+          "SSID": "g0v Staff",
+          "password": "iamnobody"
+        }
+      ],
+      "visible_roles": [
+        "staff"
+      ]
+    },
+    {
       "feature": "announcement",
       "display_text": {
         "en": "Bulletin",
