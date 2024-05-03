@@ -36,12 +36,54 @@
       }
     },
     {
+      "feature": "wifi",
+      "display_text": {
+        "en": "Wi-Fi",
+        "zh": "會場 Wi-Fi"
+      },
+      "wifi": [
+        {
+          "SSID": "g0v Summit 2024_via KlickKlack",
+          "password": "summit2024"
+        }
+      ],
+      "visible_roles": [
+        "attendee",
+        "speaker"
+      ]
+    },
+    {
+      "feature": "wifi",
+      "display_text": {
+        "en": "Wi-Fi",
+        "zh": "會場 Wi-Fi"
+      },
+      "wifi": [
+        {
+          "SSID": "g0v Staff",
+          "password": "iamnobody"
+        }
+      ],
+      "visible_roles": [
+        "staff"
+      ]
+    },
+    {
       "feature": "announcement",
       "display_text": {
         "en": "Bulletin",
         "zh": "大會公告"
       },
       "url": "https://opass.g0v.tw"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Safety Tips",
+        "zh": "安全須知"
+      },
+      "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
+      "url": "https://summit.g0v.tw/2024/safety/"
     },
     {
       "feature": "schedule",
@@ -73,6 +115,7 @@
         "en": "Unconf.",
         "zh": "開放工作坊"
       },
+      "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
       "url": "https://g0v.hackmd.io/@summit2024/notes/%2FIGm0HDk1QDKRAoqpf6d7qA"
     },
     {
@@ -81,6 +124,7 @@
         "en": "Lightning Talk",
         "zh": "閃電講"
       },
+      "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
       "url": "https://g0v.hackmd.io/@summit2024/notes/%2FJCl7O8QXTeWlcYukM6ld3w"
     },
     {
@@ -97,7 +141,17 @@
         "en": "Code of Conduct",
         "zh": "社群守則"
       },
+      "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
       "url": "https://summit.g0v.tw/2024/coc/"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "CoC Violation Report",
+        "zh": "騷擾事件通報"
+      },
+      "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
+      "url": "https://forms.gle/LYGUTG58yj8doKxT6"
     },
     {
       "feature": "webview",
@@ -105,6 +159,7 @@
         "en": "Working Group Minutes",
         "zh": "籌備紀錄"
       },
+      "icon": "https://summit.g0v.tw/2024/assets/img/pangolin-mono.png",
       "url": "https://g0v.hackmd.io/@summit2024/book/"
     },
     {
