@@ -1,0 +1,121 @@
+{
+  "event_id": "PyCon_2023",
+  "display_name": {
+    "en": "PyConTW 2023",
+    "zh": "PyConTW 2023"
+  },
+  "logo_url": "https://storage.googleapis.com/pycontw-static/ccip-files/mobile-logo.png",
+  "event_website": "https://tw.pycon.org/2023/",
+  "event_date": {
+    "start": "2023-09-02T09:10:00+08:00",
+    "end": "2023-09-03T19:00:00+08:00"
+  },
+  "publish": {
+    "start": "2023-08-27T00:00:00+08:00",
+    "end": "2024-01-01T00:00:00+08:00"
+  },
+  "features": [
+    {
+      "feature": "fastpass",
+      "display_text": {
+        "en": "Fast Pass",
+        "zh": "快速通關"
+      },
+      "url": "https://opass.pycon.tw"
+    },
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "議程"
+      },
+      "url": "https://tw.pycon.org/prs/ccip/"
+    },
+    {
+      "feature": "announcement",
+      "display_text": {
+        "en": "Announcement",
+        "zh": "大會公告"
+      },
+      "url": "https://opass.pycon.tw"
+    },
+    {
+      "feature": "puzzle",
+      "display_text": {
+        "en": "Pythonista",
+        "zh": "拍神之路"
+      },
+      "url": "https://game.pycon.tw/?mode=app&token={public_token}"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Pythonista Word",
+        "zh": "拍神字母"
+      },
+      "url": "https://opass.pycon.tw/pintoo?token={token}"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Pythonista Manual",
+        "zh": "拍神祕笈"
+      },
+      "icon": "https://storage.googleapis.com/pycontw-static/ccip-files/mdi_book-outline.png",
+      "url": "https://hackmd.io/@pycontw/HJgqT-gsn"
+    },
+    {
+      "feature": "ticket",
+      "display_text": {
+        "en": "Ticket",
+        "zh": "我的票券"
+      }
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Discord",
+        "zh": "Discord"
+      },
+      "icon": "https://raw.githubusercontent.com/pycontw/ccip-files/master/2020/icon_discord_48.png",
+      "url": "https://tw.pycon.org/2023/ext/discord?ccip=true"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Sponsors",
+        "zh": "贊助"
+      },
+      "url": "https://tw.pycon.org/2023/about/sponsor?ccip=ture"
+    },
+    {
+      "feature": "venue",
+      "display_text": {
+        "en": "Venue",
+        "zh": "會場地圖"
+      },
+      "url": "https://storage.googleapis.com/pycontw-static/ccip-files/venue.jpg"
+    },
+    {
+      "feature": "wifi",
+      "display_text": {
+        "en": "WiFi",
+        "zh": "會場 WiFi"
+      },
+      "wifi": [
+        {
+          "SSID": "PyConTW_attendee via KlickKlack",
+          "password": "h20230902"
+        }
+      ]
+    },
+    {
+      "feature": "staffs",
+      "display_text": {
+        "en": "Staffs",
+        "zh": "工作人員"
+      },
+      "url": "https://tw.pycon.org/2023/about/staff?ccip=ture"
+    }
+  ]
+}
