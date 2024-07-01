@@ -1,0 +1,35 @@
+{
+  "event_id": "hkoscon_2024",
+  "display_name": {
+    "en": "HKOSCon 2024 (Beta)",
+    "zh": "HKOSCon 2024 (Beta)"
+  },
+  "logo_url": "https://hkoscon.org/logo.png",
+  "event_website": "https://hkoscon.org/2024",
+  "event_date": {
+    "start": "2024-07-05T10:00:00+08:00",
+    "end": "2024-07-06T17:00:00+08:00"
+  },
+  "publish": {
+    "start": "2024-07-01T08:00",
+    "end": "2024-07-14T08:00"
+  },
+  "features": [
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "Timetable"
+      },
+      "url": "https://hkoscon.org/2024/opass-timetable.json"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Sponsor & Supporting Organization",
+        "zh": "Sponsor & Supporting Organization"
+      },
+      "url": "https://hkoscon.org/2024/sponsor/"
+    }
+  ]
+}
