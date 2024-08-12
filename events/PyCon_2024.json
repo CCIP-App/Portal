@@ -7,7 +7,7 @@
   "logo_url": "https://storage.googleapis.com/pycontw-static/ccip-files/mobile-logo.png",
   "event_website": "https://tw.pycon.org/2024/",
   "event_date": {
-    "start": "2024-09-21T09:10:00+08:00",
+    "start": "2024-09-21T08:00:00+08:00",
     "end": "2024-09-22T19:00:00+08:00"
   },
   "publish": {
@@ -69,7 +69,7 @@
         "en": "Discord",
         "zh": "Discord"
       },
-      "icon": "https://raw.githubusercontent.com/pycontw/ccip-files/master/2020/icon_discord_48.png",
+      "icon": "https://raw.githubusercontent.com/pycontw/ccip-files/master/2024/icon_discord_clyde_black_RGB.png",
       "url": "https://tw.pycon.org/2024/ext/discord?ccip=true"
     },
     {
