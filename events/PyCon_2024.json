@@ -34,27 +34,19 @@
     {
       "feature": "puzzle",
       "display_text": {
-        "en": "Pythonista",
-        "zh": "拍神之路"
+        "en": "Puzzle",
+        "zh": "Puzzle"
       },
       "url": "https://game.pycon.tw/?mode=app&token={public_token}"
     },
     {
       "feature": "webview",
       "display_text": {
-        "en": "Pythonista Word",
-        "zh": "拍神字母"
-      },
-      "url": "https://opass.pycon.tw/pintoo?token={token}"
-    },
-    {
-      "feature": "webview",
-      "display_text": {
-        "en": "Pythonista Manual",
-        "zh": "拍神祕笈"
+        "en": "Booth Game",
+        "zh": "大地遊戲"
       },
       "icon": "https://storage.googleapis.com/pycontw-static/ccip-files/mdi_book-outline.png",
-      "url": "https://hackmd.io/@pycontw/HJgqT-gsn"
+      "url": "https://github.com/pycontw/PyCon-TW-2024-Booth-Game"
     },
     {
       "feature": "ticket",
