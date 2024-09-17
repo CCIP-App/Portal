@@ -16,6 +16,17 @@
   },
   "features": [
     {
+      "feature": "fastpass",
+      "display_text": {
+        "en": "Fast Pass",
+        "zh": "快速通關"
+      },
+      "visible_roles": [
+        "invisible"
+      ],
+      "url": "https://opass.pycon.tw"
+    },
+    {
       "feature": "schedule",
       "display_text": {
         "en": "Schedule",
