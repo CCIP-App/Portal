@@ -60,6 +60,14 @@
       "url": "https://github.com/pycontw/PyCon-TW-2024-Booth-Game"
     },
     {
+      "feature": "webview",
+      "display_text": {
+        "en": "Puzzle",
+        "zh": "Puzzle"
+      },
+      "url": "https://opass.pycon.tw/pintoo?token={token}"
+    },
+    {
       "feature": "ticket",
       "display_text": {
         "en": "Ticket",
