@@ -4,7 +4,7 @@
     "en": "PyConTW 2024",
     "zh": "PyConTW 2024"
   },
-  "logo_url": "https://storage.googleapis.com/pycontw-static/ccip-files/mobile-logo.png",
+  "logo_url": "https://github.com/pycontw/ccip-files/blob/8fd878750e091f009628c4c23471e0c1e9d70224/2024/pycon_tw_mobile_logo.png",
   "event_website": "https://tw.pycon.org/2024/",
   "event_date": {
     "start": "2024-09-21T08:00:00+08:00",
@@ -45,8 +45,8 @@
     {
       "feature": "puzzle",
       "display_text": {
-        "en": "Puzzle",
-        "zh": "Puzzle"
+        "en": "Reward Card",
+        "zh": "集章冊"
       },
       "url": "https://game.pycon.tw/?mode=app&token={public_token}"
     },
@@ -56,7 +56,7 @@
         "en": "Booth Game",
         "zh": "大地遊戲"
       },
-      "icon": "https://storage.googleapis.com/pycontw-static/ccip-files/mdi_book-outline.png",
+      "icon": "https://github.com/pycontw/ccip-files/blob/8fd878750e091f009628c4c23471e0c1e9d70224/2024/mdi_book_outline.png",
       "url": "https://github.com/pycontw/PyCon-TW-2024-Booth-Game"
     },
     {
@@ -72,7 +72,7 @@
         "en": "Discord",
         "zh": "Discord"
       },
-      "icon": "https://raw.githubusercontent.com/pycontw/ccip-files/master/2024/icon_discord_clyde_black_RGB.png",
+      "icon": "https://github.com/pycontw/ccip-files/blob/8fd878750e091f009628c4c23471e0c1e9d70224/2024/icon_discord_clyde_black_RGB.png",
       "url": "https://tw.pycon.org/2024/ext/discord?ccip=true"
     },
     {
@@ -89,7 +89,7 @@
         "en": "Venue",
         "zh": "會場地圖"
       },
-      "url": "https://storage.googleapis.com/pycontw-static/ccip-files/venue.jpg"
+      "url": "https://github.com/pycontw/ccip-files/blob/8fd878750e091f009628c4c23471e0c1e9d70224/2024/venue.png"
     },
     {
       "feature": "wifi",
@@ -99,8 +99,8 @@
       },
       "wifi": [
         {
-          "SSID": "PyConTW_attendee via KlickKlack",
-          "password": "h20230902"
+          "SSID": "PyConTW via KlickKlack",
+          "password": "import-takao"
         }
       ]
     },
