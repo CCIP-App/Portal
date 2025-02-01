@@ -1,0 +1,80 @@
+{
+  "event_id": "HITCON_CMT_2023",
+  "display_name": {
+    "en": "HITCON CMT 2023",
+    "zh": "HITCON CMT 2023"
+  },
+  "logo_url": "https://hitcon.org/2023/CMT/img/logo-white.png",
+  "event_website": "https://hitcon.org/2023/",
+  "event_date": {
+    "start": "2023-08-18T00:00:00+08:00",
+    "end": "2023-08-19T00:00:00+08:00"
+  },
+  "publish": {
+    "start": "2023-07-01T08:00",
+    "end": "2023-12-31T08:00"
+  },
+  "features": [
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "議程"
+      },
+      "url": "https://hitcon.org/2023/CMT/schedule.json"
+    },
+    {
+      "feature": "venue",
+      "display_text": {
+        "en": "Venue 3F",
+        "zh": "會場地圖 3F"
+      },
+      "url": "https://hitcon.org/2023/CMT/img/location/3f.png"
+    },
+    {
+      "feature": "venue",
+      "display_text": {
+        "en": "Venue 4F",
+        "zh": "會場地圖 4F"
+      },
+      "url": "https://hitcon.org/2023/CMT/img/location/4f.png"
+    },
+    {
+      "feature": "wifi",
+      "display_text": {
+        "en": "WiFi",
+        "zh": "會場 WiFi"
+      },
+      "wifi": [
+        {
+          "SSID": "HITCON CMT 2023 via KlickKlack",
+          "password": "20230818"
+        }
+      ]
+    },
+    {
+      "feature": "telegram",
+      "display_text": {
+        "en": "Telegram",
+        "zh": "Telegram"
+      },
+      "url": "https://t.me/HacksInTaiwan"
+    },
+    {
+      "feature": "im",
+      "display_text": {
+        "en": "IRC",
+        "zh": "IRC"
+      },
+      "url": "https://irc.hitcon.org"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Sponsors",
+        "zh": "贊助"
+      },
+      "url": "https://hitcon.org/2023/CMT/sponsor/"
+    }
+  ]
+}
