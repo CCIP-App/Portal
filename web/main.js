@@ -89,13 +89,13 @@ Vue.component('feature-select', {
         {
           "feature": "wifi",
           "display_text": {
-            "en": "WiFi Settings",
-            "zh": "WiFi 設定"
+            "en": "Wi-Fi Settings",
+            "zh": "Wi-Fi 設定"
           },
           "wifi": [
             {
-              "SSID": "WiFi SSID",
-              "password": "WiFi password"
+              "SSID": "Wi-Fi SSID",
+              "password": "Wi-Fi password"
             }
           ]
         },
@@ -335,7 +335,7 @@ Vue.component('feature-wifi', {
       <input type="text" placeholder="password" v-model="item.password" />
         <button type="button" class="icon" v-if="forms.length > 1" @click="remove(index)">×</button>
       </div>
-      <button type="button" class="raised" @click="add">新增WiFi</button>
+      <button type="button" class="raised" @click="add">新增Wi-Fi</button>
     </div>
   `
 })
