@@ -64,7 +64,7 @@ Vue.component('input-i18n', {
   template: `
     <div>
       <div v-for="(item, index) in forms" class="i18n-input">
-        <input type="text" placeholder="Any ISO 639-1 lang" v-model="item.lang" />
+        <input type="text" placeholder="Any BCP 47 language tag" v-model="item.lang" />
         <input type="text" placeholder="translate" v-model="item.content" />
         <button type="button" class="icon" v-if="forms.length > 1" @click="remove(index)">×</button>
       </div>
