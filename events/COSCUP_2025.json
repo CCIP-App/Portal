@@ -70,6 +70,46 @@
     {
       "feature": "webview",
       "display_text": {
+        "en": "Guide map sample",
+        "zh": "(實驗中) 導引地圖方案 A: 用 webview"
+      },
+      "url": "https://ballfish.io/guide-map-sample/"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Guide map sample",
+        "zh": "(實驗中) 前往 TR 方案 B: 直接做在 nav"
+      },
+      "url": "https://www.google.com/maps/dir//106%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E5%9F%BA%E9%9A%86%E8%B7%AF%E5%9B%9B%E6%AE%B543%E8%99%9F%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8+%E7%A0%94%E6%8F%9A%E5%A4%A7%E6%A8%93/@25.0389355,121.5102981,14z/data=!3m1!5s0x3442aa23fd97599d:0x6c042e553049282d!4m9!4m8!1m0!1m5!1m1!1s0x3442aa23fdb8fd51:0xf6126da2dfe50537!2m2!1d121.5427259!2d25.0150024!3e2?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Guide map sample",
+        "zh": "(實驗中) 前往 AU 方案 B: 直接做在 nav"
+      },
+      "url": "https://www.google.com/maps/dir//106%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E5%9F%BA%E9%9A%86%E8%B7%AF%E4%B8%89%E6%AE%B543%E8%99%9F%E5%8F%B0%E7%A7%91%E7%83%8F%E9%BE%9C%E6%B1%A0/@25.0377675,121.5287942,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3442abb7c71dd11b:0x3311240defb406e6!2m2!1d121.5418064!2d25.0140824!3e2?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Guide map sample",
+        "zh": "(實驗中) 前往 RB 方案 B: 直接做在 nav"
+      },
+      "url": "https://www.google.com/maps/dir//%E8%87%BA%E7%81%A3%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E5%9F%BA%E9%9A%86%E8%B7%AF%E5%9B%9B%E6%AE%B5%E5%8F%B0%E7%A7%91%E5%A4%A7+%E7%B6%9C%E5%90%88%E7%A0%94%E7%A9%B6%E5%A4%A7%E6%A8%93/@25.0142561,121.5410375,19.17z/data=!3m1!5s0x3442aa23fd97599d:0x6c042e553049282d!4m9!4m8!1m0!1m5!1m1!1s0x3442aa216b3fafe7:0x6dd04abf8f45b55e!2m2!1d121.5413599!2d25.0143017!3e2?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Guide map sample",
+        "zh": "(實驗中) 前往志工回孃家 方案 B: 直接做在 nav"
+      },
+      "url": "https://www.google.com/maps/dir//106%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%AE%89%E5%8D%80%E5%9F%BA%E9%9A%86%E8%B7%AF%E4%B8%89%E6%AE%B543%E8%99%9F%E5%8F%B0%E7%A7%91%E7%83%8F%E9%BE%9C%E6%B1%A0/@25.0377675,121.5287942,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3442abb7c71dd11b:0x3311240defb406e6!2m2!1d121.5418064!2d25.0140824!3e2?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
         "en": "Volunteer Quest",
         "zh": "一日志工 志工任務"
       },
