@@ -1,0 +1,32 @@
+{
+  "event_id": "esctopia2025",
+  "display_name": {
+    "en": "ESC｜Resonance",
+    "zh": "ESC｜《共振𝕽𝖊𝖘𝖔𝖓𝖆𝖓𝖈𝖾》派對"
+  },
+  "logo_url": "",
+  "event_website": "",
+  "event_date": {
+    "start": "2025/11/23 21:00",
+    "end": "2025/11/24 03:00"
+  },
+  "publish": {
+    "start": "2025/10/25 00:00",
+    "end": "2025/11/07 23:59"
+  },
+  "features": [
+    {
+      "feature": "ticket",
+      "display_text": {
+        "en": "Early Bird Ticket",
+        "zh": "🎟 早鳥票"
+      },
+      "price": 300,
+      "start": "2025/10/25 12:00",
+      "end": "2025/11/07 23:59",
+      "quota": 40,
+      "description_zh": "限量發售，含一杯啤酒。售完不補。",
+      "description_en": "Limited release. Includes one beer."
+    }
+  ]
+}
