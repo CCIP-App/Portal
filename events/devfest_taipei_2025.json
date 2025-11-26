@@ -21,7 +21,7 @@
         "en": "Schedule",
         "zh": "議程"
       },
-      "url": "https://gdg-twhk.github.io/opass-schedule/devfest-taipei-2025.json"
+      "url": "https://devfest-taipei.gdg.tw/opass-schedule/devfest-taipei-2025.json"
     },
     {
       "feature": "wifi",
@@ -71,7 +71,7 @@
         "en": "Discord",
         "zh": "Discord"
       },
-      "icon": "https://gdg-twhk.github.io/opass-schedule/assets/discord.png",
+      "icon": "https://devfest-taipei.gdg.tw/opass-schedule/assets/discord.png",
       "url": "https://discord.gg/YdBXQ3Qxj8"
     },
     {
