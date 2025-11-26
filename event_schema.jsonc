@@ -3,7 +3,7 @@
   "display_name": {
     "en": "",
     "zh": "",
-    "<Any ISO 639-1 lang>": ""
+    "<Any BCP 47 language tag>": ""
   },
   "logo_url": "https://", // logo URL
   "event_website": "https://", // website URL
@@ -22,7 +22,7 @@
       "display_text": {
         "en": "",
         "zh": "",
-        "<Any ISO 639-1 lang>": ""
+        "<Any BCP 47 language tag>": ""
       },
       /*
        * support placeholder {role}, {token}, {public_token}

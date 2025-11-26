@@ -1,18 +1,18 @@
 {
-  "event_id": "HITCON_CMT_2024",
+  "event_id": "HITCON_2025",
   "display_name": {
-    "en": "HITCON CMT 2024",
-    "zh": "HITCON CMT 2024"
+    "en": "HITCON 2025",
+    "zh": "HITCON 2025"
   },
-  "logo_url": "https://hitcon.org/2024/CMT/img/LOGO-CMT2024.png",
-  "event_website": "https://hitcon.org/2024/",
+  "logo_url": "https://hitcon.org/2025/images/logo.png",
+  "event_website": "https://hitcon.org/2025/",
   "event_date": {
-    "start": "2024-08-23T00:00:00+08:00",
-    "end": "2024-08-24T00:00:00+08:00"
+    "start": "2025-08-15T00:00:00+08:00",
+    "end": "2025-08-16T00:00:00+08:00"
   },
   "publish": {
-    "start": "2024-07-01T08:00",
-    "end": "2024-12-31T08:00"
+    "start": "2025-07-01T08:00",
+    "end": "2025-12-31T08:00"
   },
   "features": [
     {
@@ -21,7 +21,7 @@
         "en": "Schedule",
         "zh": "議程"
       },
-      "url": "https://hitcon.org/2024/CMT/schedule.json"
+      "url": "https://hitcon.org/2025/schedule.json"
     },
     {
       "feature": "webview",
@@ -30,7 +30,7 @@
         "zh": "前往購票"
       },
       "icon": "https://hitcon.org/2019/CMT/images/favicon/favicon.png",
-      "url": "https://hitcon.kktix.cc/events/hitcon-cmt-2024"
+      "url": "https://hitcon.kktix.cc/events/hitcon-2025"
     },
     {
       "feature": "webview",
@@ -39,23 +39,15 @@
         "zh": "前夜派對"
       },
       "icon": "https://hitcon.org/2019/CMT/images/favicon/favicon.png",
-      "url": "https://hitcon.kktix.cc/events/hitconcmt-party-2024"
+      "url": "https://hitcon.kktix.cc/events/hitcon-party-2025"
     },
     {
       "feature": "venue",
       "display_text": {
-        "en": "Venue 3F",
-        "zh": "會場地圖 3F"
+        "en": "Venue",
+        "zh": "會場地圖"
       },
-      "url": "https://hitcon.org/2024/CMT/img/location/3f.png"
-    },
-    {
-      "feature": "venue",
-      "display_text": {
-        "en": "Venue 4F",
-        "zh": "會場地圖 4F"
-      },
-      "url": "https://hitcon.org/2024/CMT/img/location/4f.png"
+      "url": "https://hitcon.org/2025/zh-TW/location/"
     },
     {
       "feature": "wifi",
@@ -65,8 +57,8 @@
       },
       "wifi": [
         {
-          "SSID": "HITCON CMT 2024 via KlickKlack",
-          "password": "20240823"
+          "SSID": "HITCON 2025 via KlickKlack",
+          "password": "20250815"
         }
       ]
     },
@@ -92,7 +84,7 @@
         "en": "Sponsors",
         "zh": "贊助"
       },
-      "url": "https://hitcon.org/2024/CMT/sponsor/"
+      "url": "https://hitcon.org/2025/zh-TW/sponsors/"
     }
   ]
 }

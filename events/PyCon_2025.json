@@ -1,0 +1,53 @@
+{
+  "event_id": "PyCon_2025",
+  "display_name": {
+    "en": "PyConTW 2025",
+    "zh": "PyConTW 2025"
+  },
+  "logo_url": "https://pycontw.github.io/ccip-files/2024/pycon_tw_mobile_logo.png",
+  "event_website": "https://tw.pycon.org/2025/",
+  "event_date": {
+    "start": "2025-09-06T08:00:00+08:00",
+    "end": "2025-09-07T19:00:00+08:00"
+  },
+  "publish": {
+    "start": "2025-08-01T00:00:00+08:00",
+    "end": "2025-12-31T00:00:00+08:00"
+  },
+  "features": [
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "議程"
+      },
+      "url": "https://tw.pycon.org/prs/ccip/"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Buy Ticket",
+        "zh": "前往購票"
+      },
+      "icon": "https://pycontw.github.io/ccip-files/2020/icon_hot_to_reg_48.png",
+      "url": "https://tw.pycon.org/2025/zh-hant/registration/tickets"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Discord",
+        "zh": "Discord"
+      },
+      "icon": "https://pycontw.github.io/ccip-files/2024/icon_discord_clyde_black_RGB.png",
+      "url": "https://tw.pycon.org/2025/ext/discord?ccip=true"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Sponsors",
+        "zh": "贊助"
+      },
+      "url": "https://tw.pycon.org/2025/zh-hant/sponsor"
+    }
+  ]
+}

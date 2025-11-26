@@ -42,8 +42,8 @@
     {
       "feature": "wifi",
       "display_text": {
-        "en": "WiFi",
-        "zh": "會場 WiFi"
+        "en": "Wi-Fi",
+        "zh": "會場 Wi-Fi"
       },
       "wifi": [
         {

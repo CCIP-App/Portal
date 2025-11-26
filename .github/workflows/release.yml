@@ -22,14 +22,14 @@ jobs:
         node-version: '14'
     - name: Install jq
       run: sudo apt-get install -y jq
-    - uses: actions/cache@v2
+    - uses: actions/cache@v3
       with:
         path: /tmp/hugo_cache
         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
         restore-keys: |
           ${{ runner.os }}-hugomod-
     - name: Cache dependencies
-      uses: actions/cache@v1
+      uses: actions/cache@v3
       with:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
