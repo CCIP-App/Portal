@@ -37,6 +37,15 @@
       "url": "https://sitcon.org/2026/sessions.json"
     },
     {
+      "feature": "webview",
+      "display_text": {
+        "en": "Lightning Talk",
+        "zh": "Lightning Talk"
+      },
+      "icon": "https://sitcon.org/2026/img/lightning.png",
+      "url": "https://lt.sitcon.party/"
+    },
+    {
       "feature": "ticket",
       "display_text": {
         "en": "Ticket",
