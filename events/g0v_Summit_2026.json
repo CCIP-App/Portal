@@ -41,6 +41,14 @@
       "url": "https://g0v.hackmd.io/@summit2026/coc-procedure"
     },
     {
+      "feature": "announcement",
+      "display_text": {
+        "en": "Announcement",
+        "zh": "大會公告"
+      },
+      "url": "https://sheet2announcement.seangau.xyz"
+    },
+    {
       "feature": "sponsors",
       "display_text": {
         "en": "Sponsors",
