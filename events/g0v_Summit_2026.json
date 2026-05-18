@@ -16,6 +16,15 @@
   },
   "features": [
     {
+      "feature": "webview",
+      "display_text": {
+        "en": "Register",
+        "zh": "參與活動"
+      },
+      "icon": "https://summit.g0v.tw/2026/img/stools/stool-nbg-r-l_small.png",
+      "url": "https://summit.g0v.tw/2026/register/"
+    },
+    {
       "feature": "schedule",
       "display_text": {
         "en": "Schedule",
@@ -38,7 +47,7 @@
         "zh": "社群守則"
       },
       "icon": "https://summit.g0v.tw/2026/img/stools/stool-nbg-r-l_small.png",
-      "url": "https://g0v.hackmd.io/@summit2026/coc-procedure"
+      "url": "https://summit.g0v.tw/2026/coc-procedure/"
     },
     {
       "feature": "announcement",
@@ -49,12 +58,29 @@
       "url": "https://sheet2announcement.seangau.xyz"
     },
     {
+      "feature": "webview",
+      "display_text": {
+        "en": "Notes",
+        "zh": "共筆"
+      },
+      "icon": "https://hackmd.io/hackmd-icon-1024.png",
+      "url": "https://g0v.hackmd.io/@summit2026/notes/"
+    },
+    {
       "feature": "sponsors",
       "display_text": {
         "en": "Sponsors",
         "zh": "贊助/媒體"
       },
       "url": "https://summit.g0v.tw/2026/sponsor/"
+    },
+    {
+      "feature": "staffs",
+      "display_text": {
+        "en": "Staff",
+        "zh": "工作團隊"
+      },
+      "url": "https://summit.g0v.tw/2026/staff/"
     },
     {
       "feature": "webview",
