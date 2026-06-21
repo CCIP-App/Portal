@@ -1,0 +1,75 @@
+{
+  "event_id": "COSCUP_2021",
+  "display_name": {
+    "en": "COSCUP 2021",
+    "zh": "COSCUP 2021"
+  },
+  "logo_url": "https://coscup.org/2020/images/logo-512-white.png",
+  "event_website": "https://coscup.org/2021/",
+  "event_date": {
+    "start": "2021-07-31T00:00:00+08:00",
+    "end": "2021-08-02T00:00:00+08:00"
+  },
+  "publish": {
+    "start": "2021-07-24T08:00",
+    "end": "2021-11-24T08:00"
+  },
+  "features": [
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "議程"
+      },
+      "url": "https://coscup.org/2021/json/session.json"
+    },
+    {
+      "feature": "announcement",
+      "display_text": {
+        "en": "Announcement",
+        "zh": "大會公告"
+      },
+      "url": "https://ccip.opass.app"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Booth Reward Activity",
+        "zh": "攤位大地遊戲"
+      },
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfbLdIvCFV6hq9C2pJMM6hJ2PXOnC5ld47skoxjYsKxizhP8A/viewform?usp=sf_link"
+    },
+    {
+      "feature": "telegram",
+      "display_text": {
+        "en": "Telegram",
+        "zh": "Telegram"
+      },
+      "url": "https://t.me/coscupchat"
+    },
+    {
+      "feature": "im",
+      "display_text": {
+        "en": "IRC Log",
+        "zh": "IRC Log"
+      },
+      "url": "https://ysitd.licson.net/channel/coscup/today"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Sponsors",
+        "zh": "贊助"
+      },
+      "url": "https://coscup.org/2021/zh-TW/sponsor?mode=app"
+    },
+    {
+      "feature": "staffs",
+      "display_text": {
+        "en": "Staffs",
+        "zh": "工作人員"
+      },
+      "url": "https://coscup.org/2021/zh-TW/staff?mode=app"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OPass 設定檔產生器</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
+  <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123104581-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123104581-6');
+  </script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="wrapper">
+      <h1>OPass 設定檔產生器</h1>
+      <section>
+        <div class="item">
+          <label>活動 ID <code>event_id</code></label>
+          <input placeholder="my_awesome_event" type="text" v-model="event_id" />
+        </div>
+        <div class="item">
+          <label>活動顯示名稱 <code>display_name</code></label>
+          <input-i18n v-model="display_name"></input-i18n>
+        </div>
+        <div class="item">
+          <label>Logo 網址 <code>logo_url</code></label>
+          <input placeholder="https://" type="text" v-model="logo_url" />
+        </div>
+        <div class="item">
+          <label>活動網站 <code>event_website</code></label>
+          <input placeholder="https://" type="text" v-model="event_website" />
+        </div>
+        <div class="item">
+          <label>活動期間 <code>event_date</code></label>
+          <div>
+            <input type="datetime-local" placeholder="start_time" v-model="event_date.start" />
+            <input type="datetime-local" placeholder="end_time" v-model="event_date.end" />
+          </div>
+        </div>
+        <div class="item">
+          <label>發佈期間 <code>publish</code></label>
+          <div>
+            <input type="datetime-local" placeholder="start_time" v-model="publish.start" />
+            <input type="datetime-local" placeholder="end_time" v-model="publish.end" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="item">
+          <label>功能（填寫順序即為手機端顯示順序）<code>features</code></label>
+          <opass-feature v-model="features"></opass-feature>
+        </div>
+        <button type="button" class="raised" @click="add">新增功能</button>
+      </section>
+      <button type="button" class="raised" @click="save">送出設定 PR</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
