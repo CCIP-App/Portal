@@ -32,7 +32,7 @@
         "en": "Schedule",
         "zh": "議程"
       },
-      "url": "https://coscup.org/2026/json/session.json"
+      "url": "https://coscup.org/2026/api/opass.json"
     },
     {
       "feature": "ticket",
