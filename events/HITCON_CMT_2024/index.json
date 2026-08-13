@@ -1,0 +1,98 @@
+{
+  "event_id": "HITCON_CMT_2024",
+  "display_name": {
+    "en": "HITCON CMT 2024",
+    "zh": "HITCON CMT 2024"
+  },
+  "logo_url": "https://hitcon.org/2024/CMT/img/LOGO-CMT2024.png",
+  "event_website": "https://hitcon.org/2024/",
+  "event_date": {
+    "start": "2024-08-23T00:00:00+08:00",
+    "end": "2024-08-24T00:00:00+08:00"
+  },
+  "publish": {
+    "start": "2024-07-01T08:00",
+    "end": "2024-12-31T08:00"
+  },
+  "features": [
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "議程"
+      },
+      "url": "https://hitcon.org/2024/CMT/schedule.json"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Buy Ticket",
+        "zh": "前往購票"
+      },
+      "icon": "https://hitcon.org/2019/CMT/images/favicon/favicon.png",
+      "url": "https://hitcon.kktix.cc/events/hitcon-cmt-2024"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Pre-event Party",
+        "zh": "前夜派對"
+      },
+      "icon": "https://hitcon.org/2019/CMT/images/favicon/favicon.png",
+      "url": "https://hitcon.kktix.cc/events/hitconcmt-party-2024"
+    },
+    {
+      "feature": "venue",
+      "display_text": {
+        "en": "Venue 3F",
+        "zh": "會場地圖 3F"
+      },
+      "url": "https://hitcon.org/2024/CMT/img/location/3f.png"
+    },
+    {
+      "feature": "venue",
+      "display_text": {
+        "en": "Venue 4F",
+        "zh": "會場地圖 4F"
+      },
+      "url": "https://hitcon.org/2024/CMT/img/location/4f.png"
+    },
+    {
+      "feature": "wifi",
+      "display_text": {
+        "en": "Wi-Fi",
+        "zh": "會場 Wi-Fi"
+      },
+      "wifi": [
+        {
+          "SSID": "HITCON CMT 2024 via KlickKlack",
+          "password": "20240823"
+        }
+      ]
+    },
+    {
+      "feature": "telegram",
+      "display_text": {
+        "en": "Telegram",
+        "zh": "Telegram"
+      },
+      "url": "https://t.me/HacksInTaiwan"
+    },
+    {
+      "feature": "im",
+      "display_text": {
+        "en": "IRC",
+        "zh": "IRC"
+      },
+      "url": "https://irc.hitcon.org"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Sponsors",
+        "zh": "贊助"
+      },
+      "url": "https://hitcon.org/2024/CMT/sponsor/"
+    }
+  ]
+}

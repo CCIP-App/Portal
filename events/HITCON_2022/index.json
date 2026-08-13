@@ -1,0 +1,60 @@
+{
+  "event_id": "HITCON_2022",
+  "display_name": {
+    "en": "HITCON 2022",
+    "zh": "HITCON 2022"
+  },
+  "logo_url": "https://hitcon.org/2022/_nuxt/banner.570ce175.png",
+  "event_website": "https://hitcon.org/2022/",
+  "event_date": {
+    "start": "2022-08-19T00:00:00+08:00",
+    "end": "2022-08-20T00:00:00+08:00"
+  },
+  "publish": {
+    "start": "2022-08-01T08:00",
+    "end": "2022-12-31T08:00"
+  },
+  "features": [
+    {
+      "feature": "schedule",
+      "display_text": {
+        "en": "Schedule",
+        "zh": "議程"
+      },
+      "url": "https://hitcon.org/2022/json/session.json"
+    },
+    {
+      "feature": "webview",
+      "display_text": {
+        "en": "Get Ticket",
+        "zh": "取得門票"
+      },
+      "icon": "https://hitcon.org/2019/CMT/images/favicon/favicon.png",
+      "url": "https://hitcon.kktix.cc/events/hitcon-peace-2022"
+    },
+    {
+      "feature": "telegram",
+      "display_text": {
+        "en": "Telegram",
+        "zh": "Telegram"
+      },
+      "url": "https://t.me/HacksInTaiwan"
+    },
+    {
+      "feature": "im",
+      "display_text": {
+        "en": "IRC",
+        "zh": "IRC"
+      },
+      "url": "https://irc.hitcon.org"
+    },
+    {
+      "feature": "sponsors",
+      "display_text": {
+        "en": "Sponsors",
+        "zh": "贊助"
+      },
+      "url": "https://hitcon.org/2022/sponsor"
+    }
+  ]
+}
