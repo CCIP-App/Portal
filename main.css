@@ -1,0 +1,128 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f1f2f4;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.wrapper {
+  background: #fff;
+  padding: 17px 34px;
+  margin: 48px auto;
+  max-width: 700px;
+}
+code {
+  background: #f3ecf9;
+  border-radius: 2px;
+  padding: 2px;
+}
+section {
+  border: 3px solid rgb(113, 113, 156);
+  padding: 16px;
+}
+section:not(:last-child) {
+  margin-bottom: 24px;
+}
+.item {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+.item > label {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: flex-start;
+  width: 170px;
+}
+.item > input[placeholder^="http"] {
+  width: calc(100% - 200px);
+}
+.feature-list .item > label {
+  width: 120px;
+}
+.feature-list .item > input[placeholder^="http"] {
+  width: calc(100% - 160px);
+}
+.feature-list {
+  margin-bottom: 8px;
+  width: calc(100% - 170px)
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(113, 113, 156);
+  padding: 16px;
+  margin-top: 8px;
+}
+.feature button:first-child {
+  align-self: flex-end;
+  margin-right: -8px;
+  margin-top: -8px;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+button:hover, button:focus {
+  cursor: pointer;
+  outline: 0;
+}
+button.raised {
+  background: #8e24aa;
+  color: #fff;
+  min-width: 64px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  margin: 4px 0;
+  height: 36px;
+  line-height: 1;
+  border-radius: 4px;
+  border: 0;
+  transition: box-shadow .25s ease;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0,0,0,.12); /* stolen from Material Design Components */
+}
+button.raised:hover, button.raised:focus {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0,0,0,.12);
+}
+button.raised:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+button.icon {
+  background: #fff;
+  border-radius: 100%;
+  border: 0;
+  width: 36px;
+  height: 36px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  opacity: .54;
+  transition: all .2s ease;
+}
+button.icon:hover, button.icon:focus {
+  background: #eee;
+  opacity: 1;
+}
+.i18n-input {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+  .item > label {
+    width: 100%;
+  }
+}
